@@ -16,12 +16,20 @@ namespace csharppractice
 
       //Hit enter after each method to run each method
 
-      bool traveling = false;
+      bool traveling = true;
       bool studying = true;
 
-      if (traveling || studying)
+      if (traveling && studying)
       {
         Console.WriteLine("You are doing the right thing for your future.");
+      }
+      else if (traveling && !studying)
+      {
+        Console.WriteLine("You are traveling and not studying you fool.");
+      }
+      else if (!traveling && studying)
+      {
+        Console.WriteLine("You are just studying which is fine.");
       }
       else
       {
