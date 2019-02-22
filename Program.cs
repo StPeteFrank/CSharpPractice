@@ -15,8 +15,10 @@ namespace csharppractice
     {
       //Hit enter after each method to run each method
 
-      int cubedNumber = ReturnStatementsCube(7);
-      int cubedNumber1 = ReturnStatementsCube(5);
+      double cubedNumber = ReturnStatementsCube(7);
+      double cubedNumber1 = ReturnStatementsCube(5);
+      Console.Write("Choose a number to cube: ");
+      double cubedNumber2 = ReturnStatementsCube(Convert.ToDouble(Console.ReadLine()));
       // Arrays();
       // Methods();
       // ThatSpecialNumber();
@@ -24,6 +26,8 @@ namespace csharppractice
 
       Console.WriteLine(cubedNumber);
       Console.WriteLine(cubedNumber1);
+
+      Console.WriteLine(cubedNumber2);
 
       Console.ReadLine();
 
@@ -117,9 +121,9 @@ namespace csharppractice
     }
     /////////////////////////////////////////////////
 
-    static int ReturnStatementsCube(int num)
+    static double ReturnStatementsCube(double num)
     {
-      int result = num * num * num;
+      double result = num * num * num;
       return result;
 
     }
