@@ -16,16 +16,16 @@ namespace csharppractice
 
       //Hit enter after each method to run each method
 
-      bool areMarried = false;
-      bool areHappy = false;
+      bool traveling = false;
+      bool studying = true;
 
-      if (areMarried || areHappy)
+      if (traveling || studying)
       {
-        Console.WriteLine("You are happily married.");
+        Console.WriteLine("You are doing the right thing for your future.");
       }
       else
       {
-        Console.WriteLine("You are not happily married.");
+        Console.WriteLine("You are going to fail your interview.");
       }
       // int squaredAway1 = AlwaysSquaring(3);
       // Console.Write("Choose a number: ");
