@@ -14,27 +14,29 @@ namespace csharppractice
     public static void Main(string[] args)
     {
 
-      //Hit enter after each method to run each method
+      //Hit enter in conole after each method to run each method
 
-      bool traveling = true;
-      bool studying = true;
+      Console.WriteLine(GetMax(20, 10));
 
-      if (traveling && studying)
-      {
-        Console.WriteLine("You are doing the right thing for your future.");
-      }
-      else if (traveling && !studying)
-      {
-        Console.WriteLine("You are traveling and not studying you fool.");
-      }
-      else if (!traveling && studying)
-      {
-        Console.WriteLine("You are just studying which is fine.");
-      }
-      else
-      {
-        Console.WriteLine("You are going to fail your interview.");
-      }
+      // bool traveling = true;
+      // bool studying = true;
+
+      // if (traveling && studying)
+      // {
+      //   Console.WriteLine("You are doing the right thing for your future.");
+      // }
+      // else if (traveling && !studying)
+      // {
+      //   Console.WriteLine("You are traveling and not studying you fool.");
+      // }
+      // else if (!traveling && studying)
+      // {
+      //   Console.WriteLine("You are just studying which is fine.");
+      // }
+      // else
+      // {
+      //   Console.WriteLine("You are going to fail your interview.");
+      // }
       // int squaredAway1 = AlwaysSquaring(3);
       // Console.Write("Choose a number: ");
       // int squaredAway2 = AlwaysSquaring(Convert.ToInt32(Console.ReadLine()));
@@ -175,7 +177,19 @@ namespace csharppractice
     }
     ////////////////////////////////////////////////
 
-
+    static int GetMax(int num1, int num2)
+    {
+      int result;
+      if (num1 > num2)
+      {
+        result = num1;
+      }
+      else
+      {
+        result = num2;
+      }
+      return result;
+    }
 
   }
 }
