@@ -14,8 +14,13 @@ namespace csharppractice
   {
     public static void Main(string[] args)
     {
-      Console.WriteLine("Testing");
 
+      Arrays();
+
+    }
+    static void Arrays()
+    {
+      Console.WriteLine("testing");
       Console.ReadLine();
     }
   }
