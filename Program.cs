@@ -14,11 +14,14 @@ namespace csharppractice
   {
     public static void Main(string[] args)
     {
-      //Hit enter to run each method
+      //Hit enter after each method to run each method
+
       Arrays();
       Methods();
+      ThatSpecialNumber();
 
     }
+    //////////////////////////////////////
     static void Arrays()
     {
       int[] myNumbers = { 2, 4, 6, 7, 9, 11, 23 };
@@ -39,7 +42,7 @@ namespace csharppractice
 
       Console.ReadLine();
     }
-
+    /////////////////////////////////////////
     static void Methods()
     {
 
@@ -84,6 +87,14 @@ namespace csharppractice
 
       Console.WriteLine("I have completed " + numberOfInterviews[3] + ".");
       Console.WriteLine("I have " + numberOfInterviews[3] + " interview to go with " + employers[3] + ". I'm pretty stoked and nervous at the same time.");
+
+      Console.ReadLine();
+    }
+    //////////////////////////////////////////////////
+    static void ThatSpecialNumber()
+    {
+      int specialNumber = 99;
+      Console.WriteLine(specialNumber);
 
       Console.ReadLine();
     }
