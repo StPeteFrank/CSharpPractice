@@ -5,8 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
+
 
 namespace csharppractice
 {
@@ -19,7 +18,8 @@ namespace csharppractice
       // Arrays();
       // Methods();
       // ThatSpecialNumber();
-      Parameters("Frank", 39);
+      // Parameters("Frank", 39, 39.75);
+      ReturnStatements();
     }
     //////////////////////////////////////
     static void Arrays()
@@ -100,12 +100,23 @@ namespace csharppractice
     }
     /////////////////////////////////////////////////
 
-    static void Parameters(string name, int age1)
+    static void Parameters(string name, int age1, double age2)
     {
       Console.WriteLine("Hello " + name + ". You are " + age1 + " years old.");
+      Console.Write("Well how old are you exactly: ");
+      Console.WriteLine("Actually I am " + age2 + " years old to be exact.");
 
       Console.ReadLine();
     }
+    /////////////////////////////////////////////////
+
+    static void ReturnStatements()
+    {
+      Console.WriteLine("asdch");
+
+      Console.ReadLine();
+    }
+
   }
 }
 
