@@ -16,10 +16,10 @@ namespace csharppractice
     {
       //Hit enter after each method to run each method
 
-      Arrays();
-      Methods();
-      ThatSpecialNumber();
-
+      // Arrays();
+      // Methods();
+      // ThatSpecialNumber();
+      Parameters("Frank", 39);
     }
     //////////////////////////////////////
     static void Arrays()
@@ -98,7 +98,14 @@ namespace csharppractice
 
       Console.ReadLine();
     }
+    /////////////////////////////////////////////////
 
+    static void Parameters(string name, int age1)
+    {
+      Console.WriteLine("Hello " + name + ". You are " + age1 + " years old.");
+
+      Console.ReadLine();
+    }
   }
 }
 
