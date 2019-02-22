@@ -16,7 +16,7 @@ namespace csharppractice
 
       //Hit enter in conole after each method to run each method
 
-      Console.WriteLine(GetMax(20, 10));
+      Console.WriteLine(GetMax(20, 10, 40));
 
       // bool traveling = true;
       // bool studying = true;
@@ -177,17 +177,22 @@ namespace csharppractice
     }
     ////////////////////////////////////////////////
 
-    static int GetMax(int num1, int num2)
+    static int GetMax(int num1, int num2, int num3)
     {
       int result;
-      if (num1 > num2)
+      if (num1 >= num2 && num1 >= num3)
       {
         result = num1;
       }
-      else
+      else if (num2 >= num1 && num2 >= num3)
       {
         result = num2;
       }
+      else
+      {
+        result = num3;
+      }
+
       return result;
     }
 
