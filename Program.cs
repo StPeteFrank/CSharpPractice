@@ -15,7 +15,9 @@ namespace csharppractice
     {
       //Hit enter after each method to run each method
 
-      double cubedThrice1 = KeepCubingIt(10);
+      int CubedAgain4 = AlwaysCubing(4);
+      Console.Write("Choose a number to cube for third time: ");
+      int CubedAgain5 = AlwaysCubing(Convert.ToInt32(Console.ReadLine()));
       // int cubedAgain1 = TryReturnCubeAgain(2);
       // Console.Write("Choose a number to cube again: ");
       // int cubedAgain2 = TryReturnCubeAgain(Convert.ToInt32(Console.ReadLine()));
@@ -36,7 +38,8 @@ namespace csharppractice
       // Console.WriteLine(cubedAgain1);
       // Console.WriteLine(cubedAgain2);
 
-      Console.WriteLine(cubedThrice1);
+      Console.WriteLine(CubedAgain4);
+      Console.WriteLine(CubedAgain5);
 
       Console.ReadLine();
 
@@ -144,9 +147,9 @@ namespace csharppractice
       return result;
     }
     ////////////////////////////////////////////////
-    static double KeepCubingIt(double num)
+    static int AlwaysCubing(int num)
     {
-      double result = num * num * num;
+      int result = num * num * num;
       return result;
     }
   }
