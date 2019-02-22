@@ -15,11 +15,18 @@ namespace csharppractice
     {
       //Hit enter after each method to run each method
 
+      int cubedNumber = ReturnStatementsCube(7);
+      int cubedNumber1 = ReturnStatementsCube(5);
       // Arrays();
       // Methods();
       // ThatSpecialNumber();
       // Parameters("Frank", 39, 39.75);
-      ReturnStatements();
+
+      Console.WriteLine(cubedNumber);
+      Console.WriteLine(cubedNumber1);
+
+      Console.ReadLine();
+
     }
     //////////////////////////////////////
     static void Arrays()
@@ -110,12 +117,13 @@ namespace csharppractice
     }
     /////////////////////////////////////////////////
 
-    static void ReturnStatements()
+    static int ReturnStatementsCube(int num)
     {
-      Console.WriteLine("asdch");
+      int result = num * num * num;
+      return result;
 
-      Console.ReadLine();
     }
+    /////////////////////////////////////////////////
 
   }
 }
