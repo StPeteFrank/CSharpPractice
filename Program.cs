@@ -16,8 +16,9 @@ namespace csharppractice
       /// Hit enter in conole after each method to run each method
 
       ///
-      Console.Write("Enter a day of the week: ");
-      Console.WriteLine(GetAmount(Console.ReadLine()));
+
+      // Console.Write("Enter a day of the week: ");
+      // Console.WriteLine(GetAmount(Console.ReadLine()));
 
       ///
 
@@ -114,9 +115,15 @@ namespace csharppractice
       // int squaredAway1 = AlwaysSquaring(3);
       // Console.Write("Choose a number: ");
       // int squaredAway2 = AlwaysSquaring(Convert.ToInt32(Console.ReadLine()));
+
+      ///
+
       // int cubedAgain1 = TryReturnCubeAgain(2);
       // Console.Write("Choose a number to cube again: ");
       // int cubedAgain2 = TryReturnCubeAgain(Convert.ToInt32(Console.ReadLine()));
+
+      ///
+
       // double cubedNumber = ReturnStatementsCube(7);
       // double cubedNumber1 = ReturnStatementsCube(5);
       // Console.Write("Choose a number to cube: ");
