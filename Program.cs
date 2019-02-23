@@ -15,37 +15,35 @@ namespace csharppractice
     {
       //Hit enter in conole after each method to run each method
 
+      Console.Write("Enter a number: ");
+      double num1 = Convert.ToDouble(Console.ReadLine());
 
+      Console.Write("Enter a math operator: ");
+      string op = Console.ReadLine();
 
-      // Console.Write("Enter a number: ");
-      // double num1 = Convert.ToDouble(Console.ReadLine());
+      Console.Write("Enter a second number: ");
+      double num2 = Convert.ToDouble(Console.ReadLine());
 
-      // Console.Write("Enter Operator: ");
-      // string op = Console.ReadLine();
-
-      // Console.Write("Enter a number: ");
-      // double num2 = Convert.ToDouble(Console.ReadLine());
-
-      // if (op == "+")
-      // {
-      //   Console.WriteLine(num1 + num2);
-      // }
-      // else if (op == "-")
-      // {
-      //   Console.WriteLine(num1 - num2);
-      // }
-      // else if (op == "/")
-      // {
-      //   Console.WriteLine(num1 / num2);
-      // }
-      // else if (op == "*")
-      // {
-      //   Console.WriteLine(num1 * num2);
-      // }
-      // else
-      // {
-      //   Console.WriteLine("Invalid Operator");
-      // }
+      if (op == "+")
+      {
+        Console.WriteLine(num1 + num2);
+      }
+      else if (op == "-")
+      {
+        Console.WriteLine(num1 - num2);
+      }
+      else if (op == "/")
+      {
+        Console.WriteLine(num1 / num2);
+      }
+      else if (op == "*")
+      {
+        Console.WriteLine(num1 * num2);
+      }
+      else
+      {
+        Console.WriteLine("You've entered an incorrect operator: ");
+      }
 
       // Console.WriteLine(GetMax(20, 30, 50));
 
@@ -226,6 +224,10 @@ namespace csharppractice
       return result;
     }
     ////////////////////////////////////////////////
+
+
+
+
 
   }
 }
