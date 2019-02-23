@@ -17,20 +17,26 @@ namespace csharppractice
 
       ///
 
+      Console.WriteLine(GetDay(0));
+
+      ///
+
+      ///
+
       // Console.WriteLine(GetMax1(10, 20, 30));
 
       ///
 
-      Console.Write("Enter seventh number: ");
-      int num7 = Convert.ToInt32(Console.ReadLine());
+      // Console.Write("Enter seventh number: ");
+      // int num7 = Convert.ToInt32(Console.ReadLine());
 
-      Console.Write("Enter eighth number: ");
-      int num8 = Convert.ToInt32(Console.ReadLine());
+      // Console.Write("Enter eighth number: ");
+      // int num8 = Convert.ToInt32(Console.ReadLine());
 
-      Console.Write("Enter ninth number: ");
-      int num9 = Convert.ToInt32(Console.ReadLine());
+      // Console.Write("Enter ninth number: ");
+      // int num9 = Convert.ToInt32(Console.ReadLine());
 
-      Console.WriteLine(UserGetMin1(num7, num8, num9));
+      // Console.WriteLine(UserGetMin1(num7, num8, num9));
 
       ///
 
@@ -315,6 +321,41 @@ namespace csharppractice
       return result;
     }
     /////////////////////////////////////////////////
+    static string GetDay(int dayNum)
+    {
+      string dayName;
+
+      switch (dayNum)
+      {
+        case 0:
+          dayName = "Sunday";
+          break;
+        case 1:
+          dayName = "Monday";
+          break;
+        case 2:
+          dayName = "Tuesday";
+          break;
+        case 3:
+          dayName = "Wednesday";
+          break;
+        case 4:
+          dayName = "Thursday";
+          break;
+        case 5:
+          dayName = "Friday";
+          break;
+        case 6:
+          dayName = "Saturday";
+          break;
+        default:
+          dayName = "Invalid day number";
+          break;
+      }
+
+      return dayName;
+    }
+
 
   }
 }
