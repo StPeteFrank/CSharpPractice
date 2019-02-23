@@ -15,37 +15,37 @@ namespace csharppractice
     {
       //Hit enter in conole after each method to run each method
 
-      Console.Write("Enter a number: ");
-      double num1 = Convert.ToDouble(Console.ReadLine());
+      Console.WriteLine(GetMax(2, 4, 6));
 
-      Console.Write("Enter a math operator: ");
-      string op = Console.ReadLine();
+      // Console.Write("Enter a number: ");
+      // double num1 = Convert.ToDouble(Console.ReadLine());
 
-      Console.Write("Enter a second number: ");
-      double num2 = Convert.ToDouble(Console.ReadLine());
+      // Console.Write("Enter a math operator: ");
+      // string op = Console.ReadLine();
 
-      if (op == "+")
-      {
-        Console.WriteLine(num1 + num2);
-      }
-      else if (op == "-")
-      {
-        Console.WriteLine(num1 - num2);
-      }
-      else if (op == "/")
-      {
-        Console.WriteLine(num1 / num2);
-      }
-      else if (op == "*")
-      {
-        Console.WriteLine(num1 * num2);
-      }
-      else
-      {
-        Console.WriteLine("You've entered an incorrect operator: ");
-      }
+      // Console.Write("Enter a second number: ");
+      // double num2 = Convert.ToDouble(Console.ReadLine());
 
-      // Console.WriteLine(GetMax(20, 30, 50));
+      // if (op == "+")
+      // {
+      //   Console.WriteLine(num1 + num2);
+      // }
+      // else if (op == "-")
+      // {
+      //   Console.WriteLine(num1 - num2);
+      // }
+      // else if (op == "/")
+      // {
+      //   Console.WriteLine(num1 / num2);
+      // }
+      // else if (op == "*")
+      // {
+      //   Console.WriteLine(num1 * num2);
+      // }
+      // else
+      // {
+      //   Console.WriteLine("You've entered an incorrect operator: ");
+      // }
 
       // bool traveling = true;
       // bool studying = true;
@@ -225,9 +225,23 @@ namespace csharppractice
     }
     ////////////////////////////////////////////////
 
-
-
-
+    static double GetMax(double num1, double num2, double num3)
+    {
+      double result;
+      if (num1 >= num2 && num1 >= num3)
+      {
+        result = num1;
+      }
+      else if (num2 >= num1 && num2 >= num3)
+      {
+        result = num2;
+      }
+      else
+      {
+        result = num3;
+      }
+      return result;
+    }
 
   }
 }
