@@ -15,35 +15,7 @@ namespace csharppractice
     {
       //Hit enter in conole after each method to run each method
 
-      Console.Write("Enter a number: ");
-      double num1 = Convert.ToDouble(Console.ReadLine());
 
-      Console.Write("Enter an operator: ");
-      string op = Console.ReadLine();
-
-      Console.Write("Enter a number: ");
-      double num2 = Convert.ToDouble(Console.ReadLine());
-
-      if (op == "*")
-      {
-        Console.WriteLine(num1 * num2);
-      }
-      else if (op == "/")
-      {
-        Console.WriteLine(num1 / num2);
-      }
-      else if (op == "-")
-      {
-        Console.WriteLine(num1 - num2);
-      }
-      else if (op == "+")
-      {
-        Console.WriteLine(num1 + num2);
-      }
-      else
-      {
-        Console.WriteLine("You entered an incorrect operator!");
-      }
 
       // Console.Write("Enter a number: ");
       // double num1 = Convert.ToDouble(Console.ReadLine());
@@ -82,11 +54,11 @@ namespace csharppractice
 
       // if (traveling && studying)
       // {
-      //   Console.WriteLine("You are doing the right thing for your future.");
+      //   Console.WriteLine("You are doing the right thing.");
       // }
       // else if (traveling && !studying)
       // {
-      //   Console.WriteLine("You are traveling and not studying you fool.");
+      //   Console.WriteLine("You are traveling and not studying.");
       // }
       // else if (!traveling && studying)
       // {
@@ -94,7 +66,7 @@ namespace csharppractice
       // }
       // else
       // {
-      //   Console.WriteLine("You are going to fail your interview.");
+      //   Console.WriteLine("You will need more training.");
       // }
       // int squaredAway1 = AlwaysSquaring(3);
       // Console.Write("Choose a number: ");
@@ -138,12 +110,12 @@ namespace csharppractice
       friends[2] = "Joe";
 
       girlfriends[0] = "Nikki";
-      girlfriends[1] = "Hot Stripper";
+      girlfriends[1] = "New girlfrined";
 
 
       Console.WriteLine("Today " + friends[0] + " broke up with his girlfriend " + girlfriends[0] + ".");
       Console.WriteLine(friends[1] + " and " + friends[2] + " were very supportive of " + friends[0]
-      + " and bought him " + myNumbers[0] + " " + girlfriends[1] + "s.");
+      + " and introduced him to " + myNumbers[0] + " " + girlfriends[1] + "s.");
 
       Console.ReadLine();
     }
@@ -175,9 +147,9 @@ namespace csharppractice
       Console.WriteLine("I am looking to fill a positions as a " + positions[3] + ".");
 
       Console.Write("Where have you applied: ");
-      employers[0] = "Presence";
-      employers[1] = "InComm";
-      employers[2] = "Webstaurant";
+      employers[0] = "ABC";
+      employers[1] = "CDE";
+      employers[2] = "FGH";
       employers[3] = Console.ReadLine();
 
       Console.WriteLine("I have applied to many organizations including " + employers[3]);
