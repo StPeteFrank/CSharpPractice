@@ -17,7 +17,11 @@ namespace csharppractice
 
       ///
 
-      Console.WriteLine(GetDay(0));
+      Console.WriteLine(GetAmount("Monday"));
+
+      ///
+
+      // Console.WriteLine(GetDay(0));
 
       ///
 
@@ -355,6 +359,30 @@ namespace csharppractice
 
       return dayName;
     }
+    /////////////////////////////////////////////
+    static int GetAmount(string depositDay)
+    {
+      int depositAmount;
+
+      switch (depositDay)
+      {
+        case "Sunday":
+          depositAmount = 100;
+          break;
+        case "Monday":
+          depositAmount = 200;
+          break;
+        case "Tuesday":
+          depositAmount = 300;
+          break;
+        default:
+          depositAmount = 0;
+          break;
+
+      }
+      return depositAmount;
+    }
+
 
 
   }
