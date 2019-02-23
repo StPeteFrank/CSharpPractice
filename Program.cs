@@ -15,7 +15,16 @@ namespace csharppractice
     {
       //Hit enter in conole after each method to run each method
 
-      Console.WriteLine(GetMax(2, 4, 6));
+      Console.Write("Enter first number: ");
+      double num4 = Convert.ToDouble(Console.ReadLine());
+
+      Console.Write("Enter second number: ");
+      double num5 = Convert.ToDouble(Console.ReadLine());
+
+      Console.Write("Enter third number: ");
+      double num6 = Convert.ToDouble(Console.ReadLine());
+
+      Console.WriteLine(GetMax(num4, num5, num6));
 
       // Console.Write("Enter a number: ");
       // double num1 = Convert.ToDouble(Console.ReadLine());
@@ -206,39 +215,39 @@ namespace csharppractice
     }
     ////////////////////////////////////////////////
 
-    static int GetMax(int num1, int num2, int num3)
-    {
-      int result;
-      if (num1 >= num2 && num1 >= num3)
-      {
-        result = num1;
-      }
-      else if (num2 >= num1 && num2 >= num3)
-      {
-        result = num2;
-      }
-      else
-      {
-        result = num3;
-      }
-      return result;
-    }
+    // static int GetMax(int num1, int num2, int num3)
+    // {
+    //   int result;
+    //   if (num1 >= num2 && num1 >= num3)
+    //   {
+    //     result = num1;
+    //   }
+    //   else if (num2 >= num1 && num2 >= num3)
+    //   {
+    //     result = num2;
+    //   }
+    //   else
+    //   {
+    //     result = num3;
+    //   }
+    //   return result;
+    // }
     ////////////////////////////////////////////////
 
-    static double GetMax(double num1, double num2, double num3)
+    static double GetMax(double num4, double num5, double num6)
     {
       double result;
-      if (num1 >= num2 && num1 >= num3)
+      if (num4 >= num5 && num4 >= num6)
       {
-        result = num1;
+        result = num4;
       }
-      else if (num2 >= num1 && num2 >= num3)
+      else if (num5 >= num4 && num5 >= num6)
       {
-        result = num2;
+        result = num5;
       }
       else
       {
-        result = num3;
+        result = num6;
       }
       return result;
     }
