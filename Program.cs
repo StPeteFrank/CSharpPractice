@@ -13,18 +13,39 @@ namespace csharppractice
   {
     public static void Main(string[] args)
     {
-      //Hit enter in conole after each method to run each method
+      /// Hit enter in conole after each method to run each method
 
-      Console.Write("Enter first number: ");
-      double num4 = Convert.ToDouble(Console.ReadLine());
+      ///
 
-      Console.Write("Enter second number: ");
-      double num5 = Convert.ToDouble(Console.ReadLine());
+      // Console.WriteLine(GetMax1(10, 20, 30));
 
-      Console.Write("Enter third number: ");
-      double num6 = Convert.ToDouble(Console.ReadLine());
+      ///
 
-      Console.WriteLine(GetMax(num4, num5, num6));
+      Console.Write("Enter seventh number: ");
+      int num7 = Convert.ToInt32(Console.ReadLine());
+
+      Console.Write("Enter eighth number: ");
+      int num8 = Convert.ToInt32(Console.ReadLine());
+
+      Console.Write("Enter ninth number: ");
+      int num9 = Convert.ToInt32(Console.ReadLine());
+
+      Console.WriteLine(UserGetMin1(num7, num8, num9));
+
+      ///
+
+      // Console.Write("Enter first number: ");
+      // double num4 = Convert.ToDouble(Console.ReadLine());
+
+      // Console.Write("Enter second number: ");
+      // double num5 = Convert.ToDouble(Console.ReadLine());
+
+      // Console.Write("Enter third number: ");
+      // double num6 = Convert.ToDouble(Console.ReadLine());
+
+      // Console.WriteLine(UserGetMin(num4, num5, num6));
+
+      ///
 
       // Console.Write("Enter a number: ");
       // double num1 = Convert.ToDouble(Console.ReadLine());
@@ -56,6 +77,8 @@ namespace csharppractice
       //   Console.WriteLine("You've entered an incorrect operator: ");
       // }
 
+      ///
+
       // bool traveling = true;
       // bool studying = true;
 
@@ -75,6 +98,9 @@ namespace csharppractice
       // {
       //   Console.WriteLine("You will need more training.");
       // }
+
+      /// 
+
       // int squaredAway1 = AlwaysSquaring(3);
       // Console.Write("Choose a number: ");
       // int squaredAway2 = AlwaysSquaring(Convert.ToInt32(Console.ReadLine()));
@@ -85,22 +111,40 @@ namespace csharppractice
       // double cubedNumber1 = ReturnStatementsCube(5);
       // Console.Write("Choose a number to cube: ");
       // double cubedNumber2 = ReturnStatementsCube(Convert.ToDouble(Console.ReadLine()));
+
+      ///
+
       // Arrays();
+
+      ///
+
       // Methods();
+
+      ///
+
       // ThatSpecialNumber();
+
+      ///
+
       // Parameters("Frank", 39, 39.75);
+
+      ///
 
       // Console.WriteLine(cubedNumber);
       // Console.WriteLine(cubedNumber1);
-
       // Console.WriteLine(cubedNumber2);
+
+      ///
 
       // Console.WriteLine(cubedAgain1);
       // Console.WriteLine(cubedAgain2);
 
+      ///
+
       // Console.WriteLine(squaredAway1);
       // Console.WriteLine(squaredAway2);
 
+      ///
 
       Console.ReadLine();
 
@@ -215,33 +259,33 @@ namespace csharppractice
     }
     ////////////////////////////////////////////////
 
-    // static int GetMax(int num1, int num2, int num3)
-    // {
-    //   int result;
-    //   if (num1 >= num2 && num1 >= num3)
-    //   {
-    //     result = num1;
-    //   }
-    //   else if (num2 >= num1 && num2 >= num3)
-    //   {
-    //     result = num2;
-    //   }
-    //   else
-    //   {
-    //     result = num3;
-    //   }
-    //   return result;
-    // }
+    static int GetMax1(int num1, int num2, int num3)
+    {
+      int result;
+      if (num1 >= num2 && num1 >= num3)
+      {
+        result = num1;
+      }
+      else if (num2 >= num1 && num2 >= num3)
+      {
+        result = num2;
+      }
+      else
+      {
+        result = num3;
+      }
+      return result;
+    }
     ////////////////////////////////////////////////
 
-    static double GetMax(double num4, double num5, double num6)
+    static double UserGetMin(double num4, double num5, double num6)
     {
       double result;
-      if (num4 >= num5 && num4 >= num6)
+      if (num4 <= num5 && num4 <= num6)
       {
         result = num4;
       }
-      else if (num5 >= num4 && num5 >= num6)
+      else if (num5 <= num4 && num5 <= num6)
       {
         result = num5;
       }
@@ -251,6 +295,26 @@ namespace csharppractice
       }
       return result;
     }
+    //////////////////////////////////////////////////
+
+    static int UserGetMin1(int num7, int num8, int num9)
+    {
+      int result;
+      if (num7 <= num8 && num7 <= num9)
+      {
+        result = num7;
+      }
+      else if (num8 <= num7 && num8 <= num9)
+      {
+        result = num8;
+      }
+      else
+      {
+        result = num9;
+      }
+      return result;
+    }
+    /////////////////////////////////////////////////
 
   }
 }
