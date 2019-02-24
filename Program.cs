@@ -16,8 +16,8 @@ namespace csharppractice
       /// Hit enter in conole after each method to run each method
 
       ///
-      Console.Write("Enter a day number: ");
-      Console.WriteLine(GetDays(Convert.ToInt32(Console.ReadLine())));
+      Console.Write("Please enter an airport number: ");
+      Console.WriteLine(GetAirport(Convert.ToInt32(Console.ReadLine())));
 
       ///
 
@@ -369,45 +369,47 @@ namespace csharppractice
       return dayName;
     }
     /////////////////////////////////////////////
-    // static int GetAmount(string depositDay)
-    // {
-    //   int depositAmount;
-    //   switch (depositDay)
-    //   {
-    //     case "sunday":
-    //       depositAmount = 100;
-    //       break;
-    //     case "monday":
-    //       depositAmount = 200;
-    //       break;
-    //     case "tuesday":
-    //       depositAmount = 300;
-    //       break;
-    //     default:
-    //       depositAmount = 0;
-    //       break;
-    //   }
-    //   return depositAmount;
-    // }
-    /////////////////////////////////////////////
-
-    static string GetDays(int dayNum)
+    static int GetAmount(string depositDay)
     {
-      string dayName;
-
-      switch (dayNum)
+      int depositAmount;
+      switch (depositDay)
       {
-        case 0:
-          dayName = "monday";
+        case "sunday":
+          depositAmount = 100;
           break;
-        case 1:
-          dayName = "tuesday";
+        case "monday":
+          depositAmount = 200;
+          break;
+        case "tuesday":
+          depositAmount = 300;
           break;
         default:
-          dayName = "Youve entered an incorrect day";
+          depositAmount = 0;
           break;
       }
-      return dayName;
+      return depositAmount;
+    }
+    /////////////////////////////////////////////
+
+    static string GetAirport(int airportNum)
+    {
+      string airportName;
+      switch (airportNum)
+      {
+        case 0:
+          airportName = "Atlanta";
+          break;
+        case 1:
+          airportName = "Boston";
+          break;
+        case 2:
+          airportName = "Calgary";
+          break;
+        default:
+          airportName = "You've enter an incorrect airportNum.";
+          break;
+      }
+      return airportName;
     }
 
   }
