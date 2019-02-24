@@ -16,6 +16,10 @@ namespace csharppractice
       /// Hit enter in conole after each method to run each method
 
       ///
+      Console.Write("Enter a day number: ");
+      Console.WriteLine(GetDays(Convert.ToInt32(Console.ReadLine())));
+
+      ///
 
       // Console.Write("Enter a day of the week: ");
       // Console.WriteLine(GetAmount(Console.ReadLine()));
@@ -23,8 +27,6 @@ namespace csharppractice
       ///
 
       // Console.WriteLine(GetDay(0));
-
-      ///
 
       ///
 
@@ -367,28 +369,46 @@ namespace csharppractice
       return dayName;
     }
     /////////////////////////////////////////////
-    static int GetAmount(string depositDay)
-    {
-      int depositAmount;
-      switch (depositDay)
-      {
-        case "sunday":
-          depositAmount = 100;
-          break;
-        case "monday":
-          depositAmount = 200;
-          break;
-        case "tuesday":
-          depositAmount = 300;
-          break;
-        default:
-          depositAmount = 0;
-          break;
-      }
-      return depositAmount;
-    }
+    // static int GetAmount(string depositDay)
+    // {
+    //   int depositAmount;
+    //   switch (depositDay)
+    //   {
+    //     case "sunday":
+    //       depositAmount = 100;
+    //       break;
+    //     case "monday":
+    //       depositAmount = 200;
+    //       break;
+    //     case "tuesday":
+    //       depositAmount = 300;
+    //       break;
+    //     default:
+    //       depositAmount = 0;
+    //       break;
+    //   }
+    //   return depositAmount;
+    // }
     /////////////////////////////////////////////
 
+    static string GetDays(int dayNum)
+    {
+      string dayName;
+
+      switch (dayNum)
+      {
+        case 0:
+          dayName = "monday";
+          break;
+        case 1:
+          dayName = "tuesday";
+          break;
+        default:
+          dayName = "Youve entered an incorrect day";
+          break;
+      }
+      return dayName;
+    }
 
   }
 }
