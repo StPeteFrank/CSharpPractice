@@ -16,8 +16,8 @@ namespace csharppractice
       /// Hit enter in conole after each method to run each method
 
       ///
-      Console.Write("Please enter an airport number: ");
-      Console.WriteLine(GetAirport(Convert.ToInt32(Console.ReadLine())));
+      // Console.Write("Please enter an airport number: ");
+      // Console.WriteLine(GetAirport(Convert.ToInt32(Console.ReadLine())));
 
       ///
 
@@ -89,6 +89,38 @@ namespace csharppractice
       // {
       //   Console.WriteLine("You've entered an incorrect operator: ");
       // }
+
+      ///
+
+      Console.Write("Enter a your first number: ");
+      int num1 = Convert.ToInt32(Console.ReadLine());
+
+      Console.Write("Enter an operator: ");
+      string op = Console.ReadLine();
+
+      Console.Write("Enter a your first number: ");
+      int num2 = Convert.ToInt32(Console.ReadLine());
+
+      if (op == "+")
+      {
+        Console.WriteLine(num1 + num2);
+      }
+      else if (op == "-")
+      {
+        Console.WriteLine(num1 - num2);
+      }
+      else if (op == "/")
+      {
+        Console.WriteLine(num1 / num2);
+      }
+      else if (op == "*")
+      {
+        Console.WriteLine(num1 * num2);
+      }
+      else
+      {
+        Console.WriteLine("You entered an incorrect operator!");
+      }
 
       ///
 
@@ -411,6 +443,7 @@ namespace csharppractice
       }
       return airportName;
     }
+    /////////////////////////////////////////////////////////
 
   }
 }
