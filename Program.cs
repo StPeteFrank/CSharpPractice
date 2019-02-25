@@ -29,15 +29,15 @@ namespace csharppractice
 
       ///
 
-      int secretNum = 9;
-      int guess = 0;
+      // int secretNum = 9;
+      // int guess = 0;
 
-      while (guess != secretNum)
-      {
-        Console.Write("Enter a guess number: ");
-        guess = Convert.ToInt32(Console.ReadLine());
-      }
-      Console.WriteLine("You Win!");
+      // while (guess != secretNum)
+      // {
+      //   Console.Write("Enter a guess number: ");
+      //   guess = Convert.ToInt32(Console.ReadLine());
+      // }
+      // Console.WriteLine("You Win!");
 
       // int index = 1;
       // do
@@ -245,10 +245,26 @@ namespace csharppractice
 
       ///
 
+      Guessing();
+
       Console.ReadLine();
 
     }
     //////////////////////////////////////
+
+    static void Guessing()
+    {
+      string secretWord = "Shout";
+      string guess = "";
+
+      while (guess != secretWord)
+      {
+        Console.WriteLine("Enter your guess word: ");
+        guess = Console.ReadLine();
+      }
+    }
+
+    ////////////////////////////////////
 
     static void BoolTest()
     {
