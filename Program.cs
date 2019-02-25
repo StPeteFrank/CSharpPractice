@@ -17,8 +17,17 @@ namespace csharppractice
 
       ///
 
-      int index = 1;
-      while (index <= 5)
+      // int index = 1;
+      // do
+      // {
+      //   Console.WriteLine(index);
+      //   index++;
+      // } while (index <= 5);
+
+      ///
+
+      double index = 1;
+      while (index <= 19.9)
       {
         Console.WriteLine(index);
         index++;
