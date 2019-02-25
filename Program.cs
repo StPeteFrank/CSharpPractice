@@ -92,35 +92,35 @@ namespace csharppractice
 
       ///
 
-      Console.Write("Enter a your first number: ");
-      int num1 = Convert.ToInt32(Console.ReadLine());
+      // Console.Write("Enter your first number: ");
+      // int num1 = Convert.ToInt32(Console.ReadLine());
 
-      Console.Write("Enter an operator: ");
-      string op = Console.ReadLine();
+      // Console.Write("Enter a math operator: ");
+      // string op = Console.ReadLine();
 
-      Console.Write("Enter a your first number: ");
-      int num2 = Convert.ToInt32(Console.ReadLine());
+      // Console.Write("Enter your second number: ");
+      // int num2 = Convert.ToInt32(Console.ReadLine());
 
-      if (op == "+")
-      {
-        Console.WriteLine(num1 + num2);
-      }
-      else if (op == "-")
-      {
-        Console.WriteLine(num1 - num2);
-      }
-      else if (op == "/")
-      {
-        Console.WriteLine(num1 / num2);
-      }
-      else if (op == "*")
-      {
-        Console.WriteLine(num1 * num2);
-      }
-      else
-      {
-        Console.WriteLine("You entered an incorrect operator!");
-      }
+      // if (op == "+")
+      // {
+      //   Console.WriteLine(num1 + num2);
+      // }
+      // else if (op == "-")
+      // {
+      //   Console.WriteLine(num1 - num2);
+      // }
+      // else if (op == "/")
+      // {
+      //   Console.WriteLine(num1 / num2);
+      // }
+      // else if (op == "*")
+      // {
+      //   Console.WriteLine(num1 * num2);
+      // }
+      // else
+      // {
+      //   Console.WriteLine("Youve entered an incorrect operator!");
+      // }
 
       ///
 
@@ -197,9 +197,46 @@ namespace csharppractice
 
       ///
 
+      Calculator();
+
       Console.ReadLine();
 
     }
+    //////////////////////////////////////
+
+    static void Calculator()
+    {
+      Console.Write("Enter your first number: ");
+      int num1 = Convert.ToInt32(Console.ReadLine());
+
+      Console.Write("Enter a math operator: ");
+      string op = Console.ReadLine();
+
+      Console.Write("Enter your second number: ");
+      int num2 = Convert.ToInt32(Console.ReadLine());
+
+      if (op == "+")
+      {
+        Console.WriteLine(num1 + num2);
+      }
+      else if (op == "-")
+      {
+        Console.WriteLine(num1 - num2);
+      }
+      else if (op == "/")
+      {
+        Console.WriteLine(num1 / num2);
+      }
+      else if (op == "*")
+      {
+        Console.WriteLine(num1 * num2);
+      }
+      else
+      {
+        Console.WriteLine("Youve entered an incorrect operator!");
+      }
+    }
+
     //////////////////////////////////////
     static void Arrays()
     {
