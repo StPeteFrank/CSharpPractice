@@ -272,15 +272,12 @@ namespace csharppractice
     //////////////////////////////////////
     static void ForLoop()
     {
-      int[] FranksNumbers = { 1, 2, 3, 5, 7, 9, 11 };
-      for (int i = 0; i < FranksNumbers.Length; i++)
+      int[] numbers = { 1, 2, 3, 4, 5, 6 };
+      for (int i = 0; i < numbers.Length; i++)
       {
-        Console.WriteLine(FranksNumbers[i]);
+        Console.WriteLine(numbers[i]);
       }
     }
-
-
-
     //////////////////////////////////////
     static void Guessing()
     {
