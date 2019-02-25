@@ -16,6 +16,15 @@ namespace csharppractice
       /// Hit enter in conole after each method to run each method
 
       ///
+      // int[] luckyNumbers = { 4, 8, 15, 16, 23, 42 };
+
+      // for (int i = 0; i < luckyNumbers.Length; i++)
+      // {
+      //   Console.WriteLine(luckyNumbers[i]);
+
+      // }
+
+      ///
 
       // string secretWord = "giraffe";
       // string guess = "";
@@ -245,7 +254,7 @@ namespace csharppractice
 
       ///
 
-      Guessing();
+      // Guessing();
 
       Console.ReadLine();
 
@@ -281,35 +290,6 @@ namespace csharppractice
       {
         Console.Write("Winner!");
       }
-
-
-      // string secretWord = "Shout";
-      // string guess = "";
-      // int guessCount = 0;
-      // int guessLimit = 3;
-      // bool outOfGuesses = false;
-
-      // while (guess != secretWord && !outOfGuesses)
-      // {
-      //   if (guessCount < guessLimit)
-      //   {
-      //     Console.Write("Enter your guess word: ");
-      //     guess = Console.ReadLine();
-      //     guessCount++;
-      //   }
-      //   else
-      //   {
-      //     outOfGuesses = true;
-      //   }
-      // }
-      // if (outOfGuesses)
-      // {
-      //   Console.Write("You lose!");
-      // }
-      // else
-      // {
-      //   Console.Write("You win!");
-      // }
 
     }
 
