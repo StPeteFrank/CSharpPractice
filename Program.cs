@@ -197,12 +197,41 @@ namespace csharppractice
 
       ///
 
-      Calculator();
+      // Calculator();
+
+      ///
+
+      BoolTest();
 
       Console.ReadLine();
 
     }
     //////////////////////////////////////
+
+    static void BoolTest()
+    {
+      bool working = false;
+      bool havingFun = true;
+
+      if (working && havingFun)
+      {
+        Console.WriteLine("Doing really well!");
+      }
+      else if (working && !havingFun)
+      {
+        Console.WriteLine("Carla will be dissappointed.");
+      }
+      else if (!working && havingFun)
+      {
+        Console.WriteLine("Are not doing well.");
+      }
+      else
+      {
+        Console.WriteLine("You are doing very poorly.");
+      }
+    }
+
+    /////////////////////////////////////
 
     static void Calculator()
     {
