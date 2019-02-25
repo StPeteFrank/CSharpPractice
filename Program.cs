@@ -17,6 +17,28 @@ namespace csharppractice
 
       ///
 
+      // string secretWord = "giraffe";
+      // string guess = "";
+
+      // while (guess != secretWord)
+      // {
+      //   Console.Write("Enter guess: ");
+      //   guess = Console.ReadLine();
+      // }
+      // Console.Write("You win!");
+
+      ///
+
+      int secretNum = 9;
+      int guess = 0;
+
+      while (guess != secretNum)
+      {
+        Console.Write("Enter a guess number: ");
+        guess = Convert.ToInt32(Console.ReadLine());
+      }
+      Console.WriteLine("You Win!");
+
       // int index = 1;
       // do
       // {
@@ -26,12 +48,12 @@ namespace csharppractice
 
       ///
 
-      double index = 1;
-      while (index <= 19.9)
-      {
-        Console.WriteLine(index);
-        index++;
-      }
+      // double taco = 1;
+      // while (taco <= 10)
+      // {
+      //   Console.WriteLine(taco);
+      //   taco++;
+      // }
 
       ///
       // Console.Write("Please enter an airport number: ");
