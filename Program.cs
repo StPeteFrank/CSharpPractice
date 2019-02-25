@@ -16,6 +16,15 @@ namespace csharppractice
       /// Hit enter in conole after each method to run each method
 
       ///
+
+      int index = 1;
+      while (index <= 5)
+      {
+        Console.WriteLine(index);
+        index++;
+      }
+
+      ///
       // Console.Write("Please enter an airport number: ");
       // Console.WriteLine(GetAirport(Convert.ToInt32(Console.ReadLine())));
 
@@ -201,7 +210,9 @@ namespace csharppractice
 
       ///
 
-      BoolTest();
+      // BoolTest();
+
+      ///
 
       Console.ReadLine();
 
