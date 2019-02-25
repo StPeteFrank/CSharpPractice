@@ -16,12 +16,20 @@ namespace csharppractice
       /// Hit enter in conole after each method to run each method
 
       ///
+
+      // int[] stringArray = { 2, 4, 5, 7, 9, 10, 12 };
+      // for (int i = 0; i < stringArray.Length; i++)
+      // {
+      //   Console.WriteLine(stringArray[i]);
+      // }
+
+      ///
+
       // int[] luckyNumbers = { 4, 8, 15, 16, 23, 42 };
 
       // for (int i = 0; i < luckyNumbers.Length; i++)
       // {
       //   Console.WriteLine(luckyNumbers[i]);
-
       // }
 
       ///
@@ -256,11 +264,24 @@ namespace csharppractice
 
       // Guessing();
 
+      ForLoop();
+
       Console.ReadLine();
 
     }
     //////////////////////////////////////
+    static void ForLoop()
+    {
+      int[] FranksNumbers = { 1, 2, 3, 5, 7, 9, 11 };
+      for (int i = 0; i < FranksNumbers.Length; i++)
+      {
+        Console.WriteLine(FranksNumbers[i]);
+      }
+    }
 
+
+
+    //////////////////////////////////////
     static void Guessing()
     {
       string secretWord = "grand cayman";
