@@ -264,11 +264,27 @@ namespace csharppractice
 
       // Guessing();
 
-      ForLoop();
+      // ForLoop();
+
+      Console.WriteLine(GetPow(3, 3));
 
       Console.ReadLine();
 
     }
+    //////////////////////////////////////
+
+    static int GetPow(int baseNum, int powNum)
+    {
+      int result = 2;
+
+      for (int i = 0; i < powNum; i++)
+      {
+        result = result * baseNum;
+      }
+
+      return result;
+    }
+
     //////////////////////////////////////
     static void ForLoop()
     {
@@ -278,7 +294,8 @@ namespace csharppractice
         Console.WriteLine(array[i]);
       }
     }
-    //indexing variable i
+    // indexing variable i
+    // looping guard or condition = keep looping as long as (array.Length)...
 
     //////////////////////////////////////
     static void Guessing()
