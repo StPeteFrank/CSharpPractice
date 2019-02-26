@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace csharppractice.Books
+namespace csharppractice.ScaryBooks
 {
-  class Book
+  class ScaryBook
   {
     public string title;
     public string author;
