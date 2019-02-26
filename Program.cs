@@ -19,23 +19,14 @@ namespace csharppractice
 
       ///
 
-      Book book1 = new Book();
-      book1.title = "Harry Potter";
-      book1.author = "JK Rowlings";
-      book1.pages = 400;
+      Book book1 = new Book("Harry Potter", "JK Rowlings", 400);
 
-      Book book2 = new Book();
-      book2.title = "LOTR";
-      book2.author = "Tolkien";
-      book2.pages = 700;
+      Book book2 = new Book("LOTR", "Tolkien", 700);
 
       ScaryBook scaryBook1 = new ScaryBook();
       scaryBook1.title = "Carey";
       scaryBook1.author = "Steven King";
       scaryBook1.pages = 900;
-
-      // Book is now a data type where you can create a dat type (book1) object.
-      // An object (book1) is an instance of a class.
 
       Console.WriteLine(book1.title);
       Console.WriteLine(book1.author);
@@ -48,6 +39,9 @@ namespace csharppractice
       Console.WriteLine(scaryBook1.title);
       Console.WriteLine(scaryBook1.author);
       Console.WriteLine(scaryBook1.pages);
+
+      // Book is now a data type where you can create a dat type (book1) object.
+      // An object (book1) is an instance of a class.
 
       ///
 
