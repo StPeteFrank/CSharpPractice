@@ -275,13 +275,11 @@ namespace csharppractice
 
     static int GetPow(int baseNum, int powNum)
     {
-      int result = 2;
-
+      int result = 3;
       for (int i = 0; i < powNum; i++)
       {
         result = result * baseNum;
       }
-
       return result;
     }
 
