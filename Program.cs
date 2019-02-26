@@ -266,7 +266,7 @@ namespace csharppractice
 
       // ForLoop();
 
-      Console.WriteLine(GetPow(3, 3));
+      Console.WriteLine(GetPow(3, 2));
 
       Console.ReadLine();
 
@@ -275,7 +275,7 @@ namespace csharppractice
 
     static int GetPow(int baseNum, int powNum)
     {
-      int result = 3;
+      int result = 1;
       for (int i = 0; i < powNum; i++)
       {
         result = result * baseNum;
