@@ -3,33 +3,41 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using csharppractice.Books;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
 
 namespace csharppractice
 {
-  public class Program
+  class Program
   {
-    public static void Main(string[] args)
+    static void Main(string[] args)
     {
       /// Hit enter in conole after each method to run each method
 
       ///
 
-      try
-      {
-        Console.Write("Enter first number: ");
-        int num1 = Convert.ToInt32(Console.ReadLine());
-        Console.Write("Enter second number: ");
-        int num2 = Convert.ToInt32(Console.ReadLine());
+      Book book1 = new Book();
+      book1.title = "Harry Potter";
+      book1.author = "JK Rowlings";
+      book1.pages = 400;
 
-        Console.WriteLine(num1 / num2);
-      }
-      catch (Exception e)
-      {
-        Console.WriteLine(e.Message);
-      }
+      ///
+
+      // try
+      // {
+      //   Console.Write("Enter first number: ");
+      //   int num1 = Convert.ToInt32(Console.ReadLine());
+      //   Console.Write("Enter second number: ");
+      //   int num2 = Convert.ToInt32(Console.ReadLine());
+
+      //   Console.WriteLine(num1 / num2);
+      // }
+      // catch (Exception e)
+      // {
+      //   Console.WriteLine(e.Message);
+      // }
 
       ///
 
