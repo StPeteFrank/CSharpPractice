@@ -17,15 +17,30 @@ namespace csharppractice
 
       ///
 
-      int[,] numberGrid = {
-          { 1, 2},
-          { 3, 4},
-          { 5, 6},
-          { 7, 8}
+      try
+      {
+        Console.Write("Enter first number: ");
+        int num1 = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter second number: ");
+        int num2 = Convert.ToInt32(Console.ReadLine());
 
-      };
-      Console.WriteLine(numberGrid[3, 0]);
+        Console.WriteLine(num1 / num2);
+      }
+      catch (Exception e)
+      {
+        Console.WriteLine(e.Message);
+      }
 
+      ///
+
+      // int[,] numberGrid = {
+      //     { 1, 2},
+      //     { 3, 4},
+      //     { 5, 6},
+      //     { 7, 8}
+
+      // };
+      // Console.WriteLine(numberGrid[3, 0]);
 
       ///
 
