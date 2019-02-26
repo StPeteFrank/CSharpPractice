@@ -266,19 +266,19 @@ namespace csharppractice
 
       // ForLoop();
 
-      Console.WriteLine(GetPow(2.5, 3));
+      Console.Write(GetPow(3, 2));
 
       Console.ReadLine();
 
     }
     //////////////////////////////////////
 
-    static double GetPow(double baseNum, double powNum)
+    static int GetPow(int baseNum, int powNum)
     {
-      double result = 1;
+      int result = 3;
       for (int i = 0; i < powNum; i++)
       {
-        result = result * baseNum;
+        result *= baseNum;
       }
       return result;
     }
