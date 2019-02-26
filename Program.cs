@@ -272,12 +272,14 @@ namespace csharppractice
     //////////////////////////////////////
     static void ForLoop()
     {
-      int[] numbers = { 1, 2, 3, 4, 5, 6 };
-      for (int i = 0; i < numbers.Length; i++)
+      int[] array = { 2, 4, 8, 9, 11, 34 };
+      for (int i = 0; i < array.Length; i++)
       {
-        Console.WriteLine(numbers[i]);
+        Console.WriteLine(array[i]);
       }
     }
+    //indexing variable i
+
     //////////////////////////////////////
     static void Guessing()
     {
