@@ -17,6 +17,18 @@ namespace csharppractice
 
       ///
 
+      int[,] numberGrid = {
+          { 1, 2},
+          { 3, 4},
+          { 5, 6},
+          { 7, 8}
+
+      };
+      Console.WriteLine(numberGrid[3, 0]);
+
+
+      ///
+
       // int[] stringArray = { 2, 4, 5, 7, 9, 10, 12 };
       // for (int i = 0; i < stringArray.Length; i++)
       // {
@@ -264,21 +276,31 @@ namespace csharppractice
 
       // Guessing();
 
+      //
+
       // ForLoop();
 
-      Console.Write(GetPow(3, 2));
+      //
+
+      // Console.Write(GetPow(3, 2));
+
+      //
 
       Console.ReadLine();
 
     }
     //////////////////////////////////////
 
+
+
+    /////////////////////////////////////
+
     static int GetPow(int baseNum, int powNum)
     {
       int result = 3;
       for (int i = 0; i < powNum; i++)
       {
-        result *= baseNum;
+        result *= baseNum;  // result = result * baseNUm;
       }
       return result;
     }
