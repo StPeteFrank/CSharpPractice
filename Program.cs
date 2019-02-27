@@ -852,6 +852,24 @@ namespace csharppractice
     }
     ////////////////////////////////////////////
 
+    // In this kata you get the start number and the end number of a region 
+    // and should return the count of all numbers except numbers with a 5 in it. 
+    // The start and the end number are both inclusive!
+
+    public class Kata6
+    {
+      public static int DontGiveMeFive(int start, int end)
+      {
+        int count = 0;
+        for (int i = start; i <= end; i++)
+        {
+          string temp = i.ToString();
+          if (!temp.Contains("5")) count++;
+        }
+        return count;
+      }
+    }
+    /////////////////////////////////////////////
 
   }
 }
