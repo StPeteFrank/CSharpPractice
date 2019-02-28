@@ -31,11 +31,8 @@ namespace csharppractice
 
       FunnyBook funnyBook1 = new FunnyBook("Cat In The hat", "Dr. Suess", 300);
 
-      RecipeBook recipeBook1 = new RecipeBook();
-      recipeBook1.title = "Carlas Cooking";
-      recipeBook1.author = "Carla Ferris";
-      recipeBook1.pages = 200;
-      recipeBook1.numberOfRecipes = 100;
+      RecipeBook recipeBook1 = new RecipeBook("Carlas Cookbook", "Carla Ferris", 200, 100);
+
 
       Console.WriteLine(book1.title);
       Console.WriteLine(book1.author);
