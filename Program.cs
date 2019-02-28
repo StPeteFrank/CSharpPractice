@@ -29,10 +29,8 @@ namespace csharppractice
       scaryBook1.author = "Steven King";
       scaryBook1.pages = 900;
 
-      FunnyBook funnyBook1 = new FunnyBook();
-      funnyBook1.title = "Cat In The Hat";
-      funnyBook1.author = "Dr. Suess";
-      funnyBook1.pages = 300;
+      FunnyBook funnyBook1 = new FunnyBook("Cat In The hat", "Dr. Suess", 300);
+
 
       Console.WriteLine(book1.title);
       Console.WriteLine(book1.author);
