@@ -8,7 +8,9 @@ namespace csharppractice.FunnyBooks
 {
   class FunnyBooks
   {
-
+    public string title;
+    public string author;
+    public int pages;
   }
 
 }
