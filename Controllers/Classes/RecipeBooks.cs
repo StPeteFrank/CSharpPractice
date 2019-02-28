@@ -4,21 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace csharppractice.RecipeBooks
+namespace csharppractice.ComicBooks
 {
-  class RecipeBook
+  class ComicBook
   {
     public string title;
+    public int issueNumber;
     public string author;
-    public int pages;
-    public int numberOfRecipes;
+    public string illustrator;
 
-    public RecipeBook(string aTitle, string aAuthor, int aPages, int aNumberOfRecipes)
-    {
-      title = aTitle;
-      author = aAuthor;
-      pages = aPages;
-      numberOfRecipes = aNumberOfRecipes;
-    }
   }
 }
