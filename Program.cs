@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using csharppractice.Books;
 using csharppractice.ScaryBooks;
+using csharppractice.FunnyBooks;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
@@ -28,6 +29,11 @@ namespace csharppractice
       scaryBook1.author = "Steven King";
       scaryBook1.pages = 900;
 
+      FunnyBook funnyBook1 = new FunnyBook();
+      funnyBook1.title = "Cat In The Hat";
+      funnyBook1.author = "Dr. Suess";
+      funnyBook1.pages = 300;
+
       Console.WriteLine(book1.title);
       Console.WriteLine(book1.author);
       Console.WriteLine(book1.pages);
@@ -39,6 +45,10 @@ namespace csharppractice
       Console.WriteLine(scaryBook1.title);
       Console.WriteLine(scaryBook1.author);
       Console.WriteLine(scaryBook1.pages);
+
+      Console.WriteLine(funnyBook1.title);
+      Console.WriteLine(funnyBook1.author);
+      Console.WriteLine(funnyBook1.pages);
 
       // Book is now a data type where you can create a dat type (book1) object.
       // An object (book1) is an instance of a class.

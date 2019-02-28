@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace csharppractice.FunnyBooks
 {
-  class FunnyBooks
+  class FunnyBook
   {
     public string title;
     public string author;
