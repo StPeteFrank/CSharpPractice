@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-// using csharppractice.Books;
-// using csharppractice.ScaryBooks;
+using csharppractice.Books;
+using csharppractice.ScaryBooks;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
@@ -19,26 +19,26 @@ namespace csharppractice
 
       ///
 
-      // Book book1 = new Book("Harry Potter", "JK Rowlings", 400);
+      Book book1 = new Book("Harry Potter", "JK Rowlings", 400);
 
-      // Book book2 = new Book("LOTR", "Tolkien", 700);
+      Book book2 = new Book("LOTR", "Tolkien", 700);
 
-      // ScaryBook scaryBook1 = new ScaryBook();
-      // scaryBook1.title = "Carey";
-      // scaryBook1.author = "Steven King";
-      // scaryBook1.pages = 900;
+      ScaryBook scaryBook1 = new ScaryBook();
+      scaryBook1.title = "Carey";
+      scaryBook1.author = "Steven King";
+      scaryBook1.pages = 900;
 
-      // Console.WriteLine(book1.title);
-      // Console.WriteLine(book1.author);
-      // Console.WriteLine(book1.pages);
+      Console.WriteLine(book1.title);
+      Console.WriteLine(book1.author);
+      Console.WriteLine(book1.pages);
 
-      // Console.WriteLine(book2.title);
-      // Console.WriteLine(book2.author);
-      // Console.WriteLine(book2.pages);
+      Console.WriteLine(book2.title);
+      Console.WriteLine(book2.author);
+      Console.WriteLine(book2.pages);
 
-      // Console.WriteLine(scaryBook1.title);
-      // Console.WriteLine(scaryBook1.author);
-      // Console.WriteLine(scaryBook1.pages);
+      Console.WriteLine(scaryBook1.title);
+      Console.WriteLine(scaryBook1.author);
+      Console.WriteLine(scaryBook1.pages);
 
       // Book is now a data type where you can create a dat type (book1) object.
       // An object (book1) is an instance of a class.
@@ -831,7 +831,7 @@ namespace csharppractice
 
         List<string> result = new List<string>();
 
-        for (int i = 1; i <= n; i++)
+        for (int i = 1; i <= n; i++)    /// or i <= 100;
         {
           string Value = i.ToString();
 
