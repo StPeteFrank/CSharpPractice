@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using csharppractice.Books;
 using csharppractice.ScaryBooks;
 using csharppractice.FunnyBooks;
-
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using csharppractice.ComicBooks;
 
 namespace csharppractice
 {
@@ -31,8 +31,10 @@ namespace csharppractice
 
       FunnyBook funnyBook1 = new FunnyBook("Cat In The hat", "Dr. Suess", 300);
 
+      Comic comic1 = new Comic("Spiderman", 1);
 
-
+      Console.WriteLine(comic1.title);
+      Console.WriteLine(comic1.issue);
 
       Console.WriteLine(book1.title);
       Console.WriteLine(book1.author);

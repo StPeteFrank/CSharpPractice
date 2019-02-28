@@ -6,12 +6,16 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace csharppractice.ComicBooks
 {
-  class ComicBook
+  class Comic
   {
     public string title;
-    public int issueNumber;
-    public string author;
-    public string illustrator;
+    public int issue;
+
+    public Comic(string aTitle, int aIssue)
+    {
+      title = aTitle;
+      issue = aIssue;
+    }
 
   }
 }
