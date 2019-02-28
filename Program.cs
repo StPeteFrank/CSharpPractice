@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using csharppractice.Books;
 using csharppractice.ScaryBooks;
 using csharppractice.FunnyBooks;
+using csharppractice.RecipeBooks;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
-
 
 namespace csharppractice
 {
@@ -30,6 +30,9 @@ namespace csharppractice
       scaryBook1.pages = 900;
 
       FunnyBook funnyBook1 = new FunnyBook("Cat In The hat", "Dr. Suess", 300);
+
+      RecipeBook recipeBook1 = new RecipeBook();
+
 
 
       Console.WriteLine(book1.title);
