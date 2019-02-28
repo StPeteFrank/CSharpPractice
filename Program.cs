@@ -32,8 +32,10 @@ namespace csharppractice
       FunnyBook funnyBook1 = new FunnyBook("Cat In The hat", "Dr. Suess", 300);
 
       RecipeBook recipeBook1 = new RecipeBook();
-
-
+      recipeBook1.title = "Carlas Cooking";
+      recipeBook1.author = "Carla Ferris";
+      recipeBook1.pages = 200;
+      recipeBook1.numberOfRecipes = 100;
 
       Console.WriteLine(book1.title);
       Console.WriteLine(book1.author);
@@ -50,6 +52,11 @@ namespace csharppractice
       Console.WriteLine(funnyBook1.title);
       Console.WriteLine(funnyBook1.author);
       Console.WriteLine(funnyBook1.pages);
+
+      Console.WriteLine(recipeBook1.title);
+      Console.WriteLine(recipeBook1.author);
+      Console.WriteLine(recipeBook1.pages);
+      Console.WriteLine(recipeBook1.numberOfRecipes);
 
       // Book is now a data type where you can create a dat type (book1) object.
       // An object (book1) is an instance of a class.
