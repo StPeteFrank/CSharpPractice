@@ -16,8 +16,11 @@ namespace csharppractice.Movies
       title = aTitle;
       director = aDirector;
       Rating = aRating;
+      // When you set this capital R, it is calling the Rating special method below. Then it needs to be called
+      //   with the capital R in Main.
     }
     public string Rating
+    // properties are like a special method
     {
       get { return rating; }
       set
@@ -33,7 +36,5 @@ namespace csharppractice.Movies
       }
     }
 
-
-    // properties is like a special method
   }
 }
