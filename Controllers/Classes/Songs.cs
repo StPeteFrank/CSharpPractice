@@ -10,12 +10,15 @@ namespace csharppractice.Songs
   {
     public string name;
     public string band;
-    public int length;
-    public Song(string aName, string aBand, int aLength)
+    public int duration;
+    public static int songCount = 0;
+    // this is a static attribute. 
+    public Song(string aName, string aBand, int aDuration)
     {
       name = aName;
       band = aBand;
-      length = aLength;
+      duration = aDuration;
+      songCount++;
 
     }
   }

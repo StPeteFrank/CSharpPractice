@@ -25,7 +25,10 @@ namespace csharppractice
       ///
 
       Song halo = new Song("Halo", "Perfect Circle", 300);
+      Console.WriteLine(Song.songCount);
       Song kashmir = new Song("Kashmir", "Led Zep", 500);
+      Console.WriteLine(Song.songCount);
+
 
       // Movie pulpFiction = new Movie("Pulp Fiction", "Quentin Tarantino", "R");
       // Movie abyss = new Movie("The Abyss", "James Cameron", "PG-13");
