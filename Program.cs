@@ -25,6 +25,9 @@ namespace csharppractice
       Student student1 = new Student("Jim", "Business", 2.8);
       Student student2 = new Student("Carla", "Accounting", 3.6);
 
+      Console.WriteLine("It is " + student1.HasHonors() + " that Jim has honors");
+      Console.WriteLine("It is " + student2.HasHonors() + " that Carla has honors");
+
 
       // Book book1 = new Book("Harry Potter", "JK Rowlings", 400);
 

@@ -19,7 +19,6 @@ namespace csharppractice.Students
       major = aMajor;
       gpa = aGpa;
     }
-
     public bool HasHonors()
     {
       if (gpa >= 3.5)
@@ -28,5 +27,6 @@ namespace csharppractice.Students
       }
       return false;
     }
+
   }
 }
