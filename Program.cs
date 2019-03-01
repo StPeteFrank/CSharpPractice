@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using csharppractice.Songs;
 // using csharppractice.Movies;
 // using csharppractice.Students;
 // using csharppractice.Books;
@@ -22,6 +23,9 @@ namespace csharppractice
       /// Hit enter in conole after each method to run each method
 
       ///
+
+      Song halo = new Song("Halo", "Perfect Circle", 300);
+      Song kashmir = new Song("Kashmir", "Led Zep", 500);
 
       // Movie pulpFiction = new Movie("Pulp Fiction", "Quentin Tarantino", "R");
       // Movie abyss = new Movie("The Abyss", "James Cameron", "PG-13");
