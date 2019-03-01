@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using csharppractice.Chefs;
+using csharppractice.ItalianChefs;
 // using csharppractice.UsefulTools;
 // using System.Threading.Tasks;
 // using csharppractice.Songs;
@@ -26,8 +27,11 @@ namespace csharppractice
 
       ///
 
-      // Chef chef = new Chef();
-      // chef.makeChicken();
+      Chef chef = new Chef();
+      chef.MakeChicken();
+
+      ItalianChef italianChef = new ItalianChef();
+      italianChef.MakeChicken();
 
       // UsefulTool.SayHi("Frank");
 

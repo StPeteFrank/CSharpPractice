@@ -8,6 +8,18 @@ namespace csharppractice.Chefs
 {
   class Chef
   {
-
+    public void MakeChicken()
+    // This is method.
+    {
+      Console.WriteLine("The Chef makes chicken");
+    }
+    public void MakeSalad()
+    {
+      Console.WriteLine("The Chef makes salad");
+    }
+    public void MakeSpecialDish()
+    {
+      Console.WriteLine("The Chef makes bbq ribs");
+    }
   }
 }
