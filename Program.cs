@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using csharppractice.Students;
 // using csharppractice.Books;
 // using csharppractice.ScaryBooks;
 // using csharppractice.FunnyBooks;
@@ -20,6 +21,10 @@ namespace csharppractice
       /// Hit enter in conole after each method to run each method
 
       ///
+
+      Student student1 = new Student("Jim", "Business", 2.8);
+      Student student2 = new Student("Carla", "Accounting", 3.4);
+
 
       // Book book1 = new Book("Harry Potter", "JK Rowlings", 400);
 
