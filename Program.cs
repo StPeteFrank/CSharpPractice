@@ -5,10 +5,11 @@ using System.Linq;
 using System.Threading.Tasks;
 // using csharppractice.Books;
 // using csharppractice.ScaryBooks;
-using csharppractice.FunnyBooks;
+// using csharppractice.FunnyBooks;
+// using csharppractice.ComicBooks;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
-using csharppractice.ComicBooks;
+
 
 namespace csharppractice
 {
@@ -41,25 +42,25 @@ namespace csharppractice
       // Console.WriteLine(scaryBook1.author);
       // Console.WriteLine(scaryBook1.pages);
 
-      FunnyBook funnyBook1 = new FunnyBook("", "", 0);
-      Console.WriteLine("Enter a funny book title: ");
-      funnyBook1.title = Console.ReadLine();
-      Console.WriteLine("Enter a funny book author: ");
-      funnyBook1.author = Console.ReadLine();
-      Console.WriteLine("Enter a funny book's number of pages: ");
-      funnyBook1.pages = Convert.ToInt32(Console.ReadLine());
+      // FunnyBook funnyBook1 = new FunnyBook("", "", 0);
+      // Console.WriteLine("Enter a funny book title: ");
+      // funnyBook1.title = Console.ReadLine();
+      // Console.WriteLine("Enter a funny book author: ");
+      // funnyBook1.author = Console.ReadLine();
+      // Console.WriteLine("Enter a funny book's number of pages: ");
+      // funnyBook1.pages = Convert.ToInt32(Console.ReadLine());
 
-      Comic comic1 = new Comic("", 0);
-      Console.Write("Enter a comicbook title: ");
-      comic1.title = Console.ReadLine();
-      Console.Write("Enter an issue number: ");
-      comic1.issue = Convert.ToInt32(Console.ReadLine());
+      // Comic comic1 = new Comic("", 0);
+      // Console.Write("Enter a comicbook title: ");
+      // comic1.title = Console.ReadLine();
+      // Console.Write("Enter an issue number: ");
+      // comic1.issue = Convert.ToInt32(Console.ReadLine());
 
-      Console.WriteLine("The comic is " + comic1.title + ".  The issue is number " + comic1.issue + ".");
+      // Console.WriteLine("The comic is " + comic1.title + ".  The issue is number " + comic1.issue + ".");
 
-      Console.WriteLine(funnyBook1.title);
-      Console.WriteLine(funnyBook1.author);
-      Console.WriteLine(funnyBook1.pages);
+      // Console.WriteLine(funnyBook1.title);
+      // Console.WriteLine(funnyBook1.author);
+      // Console.WriteLine(funnyBook1.pages);
 
 
 
@@ -374,7 +375,7 @@ namespace csharppractice
     //////////////////////////////////////
     static void ForLoop()
     {
-      int[] array = { 2, 4, 8, 9, 11, 34 };
+      int[] array = { 9, 18, 27, 36 };
       for (int i = 0; i < array.Length; i++)
       {
         Console.WriteLine(array[i]);
@@ -382,6 +383,7 @@ namespace csharppractice
     }
     // indexing variable i
     // looping guard or condition = keep looping as long as (array.Length)...
+    // then increment i (index number) by 1 each loop
 
     //////////////////////////////////////
     static void Guessing()
