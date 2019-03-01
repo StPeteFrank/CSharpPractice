@@ -22,5 +22,10 @@ namespace csharppractice.Songs
       songCount++;
     }
 
+    public int getSongCount()
+    {
+      return songCount;
+    }
+
   }
 }

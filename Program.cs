@@ -30,6 +30,7 @@ namespace csharppractice
       Song kashmir = new Song("Kashmir", "Led Zep", 500);
       Console.WriteLine(kashmir.name);
       Console.WriteLine("This is song number " + Song.songCount + " created in the Songs program.");
+      Console.WriteLine(kashmir.getSongCount());
 
 
       // Movie pulpFiction = new Movie("Pulp Fiction", "Quentin Tarantino", "R");
