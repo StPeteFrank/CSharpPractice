@@ -12,14 +12,15 @@ namespace csharppractice.Songs
     public string band;
     public int duration;
     public static int songCount = 0;
-    // this is a static attribute. 
+    // This is a static attribute. It is giving my info about the class in general. 
+    // Not specific to the object itself.
     public Song(string aName, string aBand, int aDuration)
     {
       name = aName;
       band = aBand;
       duration = aDuration;
       songCount++;
-
     }
+
   }
 }

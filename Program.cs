@@ -25,9 +25,11 @@ namespace csharppractice
       ///
 
       Song halo = new Song("Halo", "Perfect Circle", 300);
+      Console.WriteLine(halo.name);
       Console.WriteLine(Song.songCount);
       Song kashmir = new Song("Kashmir", "Led Zep", 500);
-      Console.WriteLine(Song.songCount);
+      Console.WriteLine(kashmir.name);
+      Console.WriteLine("This is song number " + Song.songCount + " created in the Songs program.");
 
 
       // Movie pulpFiction = new Movie("Pulp Fiction", "Quentin Tarantino", "R");
