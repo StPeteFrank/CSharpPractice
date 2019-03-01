@@ -15,7 +15,7 @@ namespace csharppractice.Movies
     {
       title = aTitle;
       director = aDirector;
-      rating = aRating;
+      Rating = aRating;
     }
     public string Rating
     {
