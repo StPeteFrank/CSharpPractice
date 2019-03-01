@@ -26,6 +26,7 @@ namespace csharppractice.Songs
     {
       return songCount;
     }
+    //Using this method you could now get the SongCount info from the specific object itself.
 
   }
 }

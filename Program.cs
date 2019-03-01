@@ -24,19 +24,22 @@ namespace csharppractice
 
       ///
 
-      Song halo = new Song("Halo", "Perfect Circle", 300);
-      Console.WriteLine(halo.name);
-      Console.WriteLine(Song.songCount);
-      Song kashmir = new Song("Kashmir", "Led Zep", 500);
-      Console.WriteLine(kashmir.name);
-      Console.WriteLine("This is song number " + Song.songCount + " created in the Songs program.");
-      Console.WriteLine(kashmir.getSongCount());
+      // Song halo = new Song("Halo", "Perfect Circle", 300);
+      // Console.WriteLine(halo.name);
+      // Console.WriteLine(Song.songCount);
+      // Song kashmir = new Song("Kashmir", "Led Zep", 500);
+      // Console.WriteLine(kashmir.name);
+      // Console.WriteLine("This is song number " + Song.songCount + " created in the Songs program.");
+      // Console.WriteLine(kashmir.getSongCount());
 
+      ///
 
       // Movie pulpFiction = new Movie("Pulp Fiction", "Quentin Tarantino", "R");
       // Movie abyss = new Movie("The Abyss", "James Cameron", "PG-13");
 
       // Console.WriteLine(pulpFiction.Rating);
+
+      ///
 
       // Student student1 = new Student("Jim", "Business", 2.8);
       // Student student2 = new Student("Carla", "Accounting", 3.6);
@@ -44,6 +47,7 @@ namespace csharppractice
       // Console.WriteLine("It is " + student1.HasHonors() + " that Jim has honors");
       // Console.WriteLine("It is " + student2.HasHonors() + " that Carla has honors");
 
+      ///
 
       // Book book1 = new Book("Harry Potter", "JK Rowlings", 400);
 
@@ -57,6 +61,11 @@ namespace csharppractice
       // Console.WriteLine(book2.author);
       // Console.WriteLine(book2.pages);
 
+      // Book is now a data type where you can create a data type (book1) object.
+      // An object (book1) is an instance of a class.
+
+      ///
+
       // ScaryBook scaryBook1 = new ScaryBook();
       // scaryBook1.title = "Carey";
       // scaryBook1.author = "Steven King";
@@ -66,6 +75,8 @@ namespace csharppractice
       // Console.WriteLine(scaryBook1.author);
       // Console.WriteLine(scaryBook1.pages);
 
+      ///
+
       // FunnyBook funnyBook1 = new FunnyBook("", "", 0);
       // Console.WriteLine("Enter a funny book title: ");
       // funnyBook1.title = Console.ReadLine();
@@ -74,6 +85,12 @@ namespace csharppractice
       // Console.WriteLine("Enter a funny book's number of pages: ");
       // funnyBook1.pages = Convert.ToInt32(Console.ReadLine());
 
+      // Console.WriteLine(funnyBook1.title);
+      // Console.WriteLine(funnyBook1.author);
+      // Console.WriteLine(funnyBook1.pages);
+
+      ///
+
       // Comic comic1 = new Comic("", 0);
       // Console.Write("Enter a comicbook title: ");
       // comic1.title = Console.ReadLine();
@@ -81,15 +98,6 @@ namespace csharppractice
       // comic1.issue = Convert.ToInt32(Console.ReadLine());
 
       // Console.WriteLine("The comic is " + comic1.title + ".  The issue is number " + comic1.issue + ".");
-
-      // Console.WriteLine(funnyBook1.title);
-      // Console.WriteLine(funnyBook1.author);
-      // Console.WriteLine(funnyBook1.pages);
-
-
-
-      // Book is now a data type where you can create a dat type (book1) object.
-      // An object (book1) is an instance of a class.
 
       ///
 
