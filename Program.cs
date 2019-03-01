@@ -23,7 +23,7 @@ namespace csharppractice
       ///
 
       Student student1 = new Student("Jim", "Business", 2.8);
-      Student student2 = new Student("Carla", "Accounting", 3.4);
+      Student student2 = new Student("Carla", "Accounting", 3.6);
 
 
       // Book book1 = new Book("Harry Potter", "JK Rowlings", 400);
