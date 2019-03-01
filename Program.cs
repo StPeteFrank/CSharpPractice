@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using csharppractice.Students;
+using csharppractice.Movies;
+// using csharppractice.Students;
 // using csharppractice.Books;
 // using csharppractice.ScaryBooks;
 // using csharppractice.FunnyBooks;
@@ -22,11 +23,14 @@ namespace csharppractice
 
       ///
 
-      Student student1 = new Student("Jim", "Business", 2.8);
-      Student student2 = new Student("Carla", "Accounting", 3.6);
+      Movie pulpFiction = new Movie("Pulp Fiction", "Quentin Tarantino", "R");
+      Movie abyss = new Movie("The Abyss", "James Cameron", "PG-13");
 
-      Console.WriteLine("It is " + student1.HasHonors() + " that Jim has honors");
-      Console.WriteLine("It is " + student2.HasHonors() + " that Carla has honors");
+      // Student student1 = new Student("Jim", "Business", 2.8);
+      // Student student2 = new Student("Carla", "Accounting", 3.6);
+
+      // Console.WriteLine("It is " + student1.HasHonors() + " that Jim has honors");
+      // Console.WriteLine("It is " + student2.HasHonors() + " that Carla has honors");
 
 
       // Book book1 = new Book("Harry Potter", "JK Rowlings", 400);
