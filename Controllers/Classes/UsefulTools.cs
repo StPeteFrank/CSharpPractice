@@ -6,7 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace csharppractice.UsefulTools
 {
-  class UsefulTool
+  static class UsefulTool
+  //The static means you cannot create an instance of it.
   {
     public static void SayHi(string name)
     {
