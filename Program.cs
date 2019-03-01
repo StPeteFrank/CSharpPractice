@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 // using csharppractice.Books;
 // using csharppractice.ScaryBooks;
-// using csharppractice.FunnyBooks;
+using csharppractice.FunnyBooks;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using csharppractice.ComicBooks;
@@ -22,14 +22,32 @@ namespace csharppractice
 
       // Book book1 = new Book("Harry Potter", "JK Rowlings", 400);
 
+      // Console.WriteLine(book1.title);
+      // Console.WriteLine(book1.author);
+      // Console.WriteLine(book1.pages);
+
       // Book book2 = new Book("LOTR", "Tolkien", 700);
+
+      // Console.WriteLine(book2.title);
+      // Console.WriteLine(book2.author);
+      // Console.WriteLine(book2.pages);
 
       // ScaryBook scaryBook1 = new ScaryBook();
       // scaryBook1.title = "Carey";
       // scaryBook1.author = "Steven King";
       // scaryBook1.pages = 900;
 
-      // FunnyBook funnyBook1 = new FunnyBook("Cat In The hat", "Dr. Suess", 300);
+      // Console.WriteLine(scaryBook1.title);
+      // Console.WriteLine(scaryBook1.author);
+      // Console.WriteLine(scaryBook1.pages);
+
+      FunnyBook funnyBook1 = new FunnyBook("", "", 0);
+      Console.WriteLine("Enter a funny book title: ");
+      funnyBook1.title = Console.ReadLine();
+      Console.WriteLine("Enter a funny book author: ");
+      funnyBook1.author = Console.ReadLine();
+      Console.WriteLine("Enter a funny book's number of pages: ");
+      funnyBook1.pages = Convert.ToInt32(Console.ReadLine());
 
       Comic comic1 = new Comic("", 0);
       Console.Write("Enter a comicbook title: ");
@@ -39,21 +57,9 @@ namespace csharppractice
 
       Console.WriteLine("The comic is " + comic1.title + ".  The issue is number " + comic1.issue + ".");
 
-      // Console.WriteLine(book1.title);
-      // Console.WriteLine(book1.author);
-      // Console.WriteLine(book1.pages);
-
-      // Console.WriteLine(book2.title);
-      // Console.WriteLine(book2.author);
-      // Console.WriteLine(book2.pages);
-
-      // Console.WriteLine(scaryBook1.title);
-      // Console.WriteLine(scaryBook1.author);
-      // Console.WriteLine(scaryBook1.pages);
-
-      // Console.WriteLine(funnyBook1.title);
-      // Console.WriteLine(funnyBook1.author);
-      // Console.WriteLine(funnyBook1.pages);
+      Console.WriteLine(funnyBook1.title);
+      Console.WriteLine(funnyBook1.author);
+      Console.WriteLine(funnyBook1.pages);
 
 
 
