@@ -2,8 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Threading.Tasks;
-using csharppractice.Songs;
+using csharppractice.UsefulTools;
+// using System.Threading.Tasks;
+// using csharppractice.Songs;
 // using csharppractice.Movies;
 // using csharppractice.Students;
 // using csharppractice.Books;
@@ -23,6 +24,8 @@ namespace csharppractice
       /// Hit enter in conole after each method to run each method
 
       ///
+      UsefulTool.SayHi("Mike");
+
 
       // Song halo = new Song("Halo", "Perfect Circle", 300);
       // Console.WriteLine(halo.name);
