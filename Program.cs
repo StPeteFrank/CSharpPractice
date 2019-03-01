@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using csharppractice.Movies;
+// using csharppractice.Movies;
 // using csharppractice.Students;
 // using csharppractice.Books;
 // using csharppractice.ScaryBooks;
@@ -23,10 +23,10 @@ namespace csharppractice
 
       ///
 
-      Movie pulpFiction = new Movie("Pulp Fiction", "Quentin Tarantino", "R");
-      Movie abyss = new Movie("The Abyss", "James Cameron", "PG-13");
+      // Movie pulpFiction = new Movie("Pulp Fiction", "Quentin Tarantino", "R");
+      // Movie abyss = new Movie("The Abyss", "James Cameron", "PG-13");
 
-      Console.WriteLine(pulpFiction.Rating);
+      // Console.WriteLine(pulpFiction.Rating);
 
       // Student student1 = new Student("Jim", "Business", 2.8);
       // Student student2 = new Student("Carla", "Accounting", 3.6);
