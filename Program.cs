@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 // using Students;
-// using csharppractice.Chefs;
-// using csharppractice.ItalianChefs;
+using csharppractice.Chefs;
+using ItalianChefs;
+using JapaneseChefs;
+using KoreanChefs;
 // using csharppractice.UsefulTools;
 // using System.Threading.Tasks;
 // using Songs;
@@ -33,11 +35,17 @@ namespace csharppractice
       // Console.WriteLine("Does student1 have honors? " + student1.HasHonors());
       // Console.WriteLine("Does student2 have honors? " + student2.HasHonors());
 
-      // Chef chef = new Chef();
-      // chef.MakeChicken();
+      Chef chef = new Chef();
+      chef.MakeChicken();
 
-      // ItalianChef italianChef = new ItalianChef();
-      // italianChef.MakePasta();
+      ItalianChef italianChef = new ItalianChef();
+      italianChef.MakePasta();
+
+      JapaneseChef japanaesChef = new JapaneseChef();
+      japanaesChef.MakeSashimi();
+
+      KoreanChef koreanChef = new KoreanChef();
+      koreanChef.MakePasta();
 
 
 
@@ -411,6 +419,26 @@ namespace csharppractice
       // Array.Sort(givenArray);
       // Console.WriteLine("The largest element is: \n" + givenArray[givenArray.Length - 1]);
 
+      //
+
+
+
+
+      //
+
+      // int[] array = { 4, 9, 6, 19, 2 };
+      // int number = 0;
+      // for (int i = 0; i < array.Length; i++)
+      // {
+      //   if (array[i] > number)
+      //   {
+      //     number = array[i];
+      //   }
+      // }
+      // Console.WriteLine(number);
+
+      //
+
 
       // OR // ForLoop
 
@@ -425,10 +453,15 @@ namespace csharppractice
       // }
       // Console.WriteLine("The largest element in the array is: \n" + largestElement.ToString());
 
-      //
+      // .Min(); 
 
-      int[] array = { 10, 6, 4, 12 };
-      Console.WriteLine(array.Min());
+      // int[] array = { 10, 6, 4, 12 };
+      // Console.WriteLine(array.Min());
+
+      // .Max();
+
+      // int[] array = { 10, 6, 4, 12 };
+      // Console.WriteLine(array.Max());
 
       Console.ReadLine();
 

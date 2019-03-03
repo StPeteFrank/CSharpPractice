@@ -13,5 +13,11 @@ namespace csharppractice.ScaryBooks
     public int pages;
 
     // these are class attributes
+    // public ScaryBook(string aTitle, string aAuthor, int aPages)
+    // {
+    //   title = aTitle;
+    //   author = aAuthor;
+    //   pages = aPages;
+    // }
   }
 }
