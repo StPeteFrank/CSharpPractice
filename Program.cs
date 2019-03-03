@@ -2,13 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using csharppractice.Students;
+// using Students;
 // using csharppractice.Chefs;
 // using csharppractice.ItalianChefs;
 // using csharppractice.UsefulTools;
 // using System.Threading.Tasks;
 // using csharppractice.Songs;
-// using csharppractice.Movies;
+using Movies;
 // using csharppractice.Students;
 // using csharppractice.Books;
 // using csharppractice.ScaryBooks;
@@ -27,9 +27,11 @@ namespace csharppractice
       /// Hit enter in conole after each method to run each method
 
       ///
-      Student student1 = new Student("Frank", "Dev", 3.7);
+      // Student student1 = new Student("Frank", "Dev", 3.7);
+      // Student student2 = new Student("Mike", "Business", 3.4);
 
-      Console.WriteLine("It seems to be " + student1.HasHonors() + " that student one has honors.");
+      // Console.WriteLine("Does student1 have honors? " + student1.HasHonors());
+      // Console.WriteLine("Does student2 have honors? " + student2.HasHonors());
 
       // Chef chef = new Chef();
       // chef.MakeChicken();
@@ -51,10 +53,10 @@ namespace csharppractice
 
       ///
 
-      // Movie pulpFiction = new Movie("Pulp Fiction", "Quentin Tarantino", "R");
-      // Movie abyss = new Movie("The Abyss", "James Cameron", "PG-13");
+      Movie pulpFiction = new Movie("Pulp Fiction", "Quentin Tarantino", "R");
+      Movie abyss = new Movie("The Abyss", "James Cameron", "PG-13");
 
-      // Console.WriteLine(pulpFiction.Rating);
+      Console.WriteLine(pulpFiction.rating);
 
       ///
 
