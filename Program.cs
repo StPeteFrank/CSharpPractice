@@ -52,7 +52,8 @@ namespace csharppractice
       Console.WriteLine(kashmir.getSongCount());
       Song hungerStrike = new Song("Hunger Strike", "Pearl Jam", 700);
       Console.WriteLine(hungerStrike.getSongCount());
-
+      Song myFavSong = new Song("My Favorite Song", "Frank Diaz", 600);
+      Console.WriteLine(Song.songCount);
       ///
 
       // Movie pulpFiction = new Movie("Pulp Fiction", "Quentin Tarantino", "G");
