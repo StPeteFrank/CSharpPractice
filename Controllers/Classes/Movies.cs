@@ -10,12 +10,29 @@ namespace Movies
   {
     public string name;
     public string director;
-    public string rating;
+    private string rating;
     public Movie(string aName, string aDirector, string aRating)
     {
       name = aName;
       director = aDirector;
-      rating = aRating;
+      Rating = aRating;
+      //This capital R calls the setter below.
+    }
+    public string Rating
+    {
+      get { return rating; }
+      set
+      {
+        if (value == "G" || value == "PG" || value == "PG-13" || value == "R")
+        {
+          rating = value;
+        }
+        else
+        {
+          rating = "NR";
+        }
+
+      }
     }
   }
 }

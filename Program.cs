@@ -53,10 +53,10 @@ namespace csharppractice
 
       ///
 
-      Movie pulpFiction = new Movie("Pulp Fiction", "Quentin Tarantino", "R");
+      Movie pulpFiction = new Movie("Pulp Fiction", "Quentin Tarantino", "Dog");
       Movie abyss = new Movie("The Abyss", "James Cameron", "PG-13");
 
-      Console.WriteLine(pulpFiction.rating);
+      Console.WriteLine(pulpFiction.Rating);
 
       ///
 
