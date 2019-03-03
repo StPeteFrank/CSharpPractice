@@ -19,6 +19,10 @@ namespace Songs
       duration = aDuration;
       songCount++;
     }
+    public int getSongCount()
+    {
+      return songCount;
+    }
   }
 
 }
