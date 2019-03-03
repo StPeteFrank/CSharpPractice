@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using csharppractice.Students;
 // using csharppractice.Chefs;
 // using csharppractice.ItalianChefs;
 // using csharppractice.UsefulTools;
@@ -26,6 +27,9 @@ namespace csharppractice
       /// Hit enter in conole after each method to run each method
 
       ///
+      Student student1 = new Student("Frank", "Dev", 3.7);
+
+      Console.WriteLine("It seems to be " + student1.HasHonors() + " that student one has honors.");
 
       // Chef chef = new Chef();
       // chef.MakeChicken();
