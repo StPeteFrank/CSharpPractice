@@ -8,7 +8,7 @@ using System.Linq;
 // using System.Threading.Tasks;
 // using csharppractice.Songs;
 // using csharppractice.Movies;
-using csharppractice.Students;
+// using csharppractice.Students;
 // using csharppractice.Books;
 // using csharppractice.ScaryBooks;
 // using csharppractice.FunnyBooks;
@@ -54,11 +54,11 @@ namespace csharppractice
 
       ///
 
-      Student student1 = new Student("Frank", "Development", 3.8);
-      Student student2 = new Student("Carla", "Accounting", 3.9);
+      // Student student1 = new Student("Frank", "Development", 3.8);
+      // Student student2 = new Student("Carla", "Accounting", 3.9);
 
-      Console.WriteLine("It is in fact " + student1.HasHonors() + " that student1 has honors");
-      Console.WriteLine("Because of a high gpa, it is " + student2.HasHonors() + " that student2 has honors");
+      // Console.WriteLine("It is in fact " + student1.HasHonors() + " that student1 has honors");
+      // Console.WriteLine("Because of a high gpa, it is " + student2.HasHonors() + " that student2 has honors");
 
       ///
 
