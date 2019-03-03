@@ -2,13 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using csharppractice.Chefs;
-using csharppractice.ItalianChefs;
+// using csharppractice.Chefs;
+// using csharppractice.ItalianChefs;
 // using csharppractice.UsefulTools;
 // using System.Threading.Tasks;
 // using csharppractice.Songs;
 // using csharppractice.Movies;
-// using csharppractice.Students;
+using csharppractice.Students;
 // using csharppractice.Books;
 // using csharppractice.ScaryBooks;
 // using csharppractice.FunnyBooks;
@@ -27,11 +27,13 @@ namespace csharppractice
 
       ///
 
-      Chef chef = new Chef();
-      chef.MakeChicken();
+      // Chef chef = new Chef();
+      // chef.MakeChicken();
 
-      ItalianChef italianChef = new ItalianChef();
-      italianChef.MakeChicken();
+      // ItalianChef italianChef = new ItalianChef();
+      // italianChef.MakePasta();
+
+
 
       // UsefulTool.SayHi("Frank");
 
@@ -52,11 +54,11 @@ namespace csharppractice
 
       ///
 
-      // Student student1 = new Student("Jim", "Business", 2.8);
-      // Student student2 = new Student("Carla", "Accounting", 3.6);
+      Student student1 = new Student("Frank", "Development", 3.8);
+      Student student2 = new Student("Carla", "Accounting", 3.9);
 
-      // Console.WriteLine("It is " + student1.HasHonors() + " that Jim has honors");
-      // Console.WriteLine("It is " + student2.HasHonors() + " that Carla has honors");
+      Console.WriteLine("It is in fact " + student1.HasHonors() + " that student1 has honors");
+      Console.WriteLine("Because of a high gpa, it is " + student2.HasHonors() + " that student2 has honors");
 
       ///
 

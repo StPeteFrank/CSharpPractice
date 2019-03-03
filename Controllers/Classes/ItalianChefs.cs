@@ -8,7 +8,11 @@ using Microsoft.AspNetCore.Mvc;
 namespace csharppractice.ItalianChefs
 {
   class ItalianChef : Chef
+  // ItalianChef id the subclass.
   {
+    public void MakePasta()
+    {
 
+    }
   }
 }

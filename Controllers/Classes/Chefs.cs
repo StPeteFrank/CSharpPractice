@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
 namespace csharppractice.Chefs
+// Chef is the super class.
 {
   class Chef
   {
