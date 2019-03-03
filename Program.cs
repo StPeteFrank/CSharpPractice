@@ -7,7 +7,7 @@ using System.Linq;
 // using csharppractice.ItalianChefs;
 // using csharppractice.UsefulTools;
 // using System.Threading.Tasks;
-using Songs;
+// using Songs;
 // using Movies;
 // using csharppractice.Students;
 // using csharppractice.Books;
@@ -43,17 +43,17 @@ namespace csharppractice
 
       // UsefulTool.SayHi("Frank");
 
-      Song halo = new Song("Halo", "Perfect Circle", 300);
-      Console.WriteLine(halo.artist);
-      Console.WriteLine(Song.songCount);
-      Song kashmir = new Song("Kashmir", "Led Zep", 500);
-      Console.WriteLine(kashmir.duration);
-      Console.WriteLine("This is song number " + Song.songCount + " created in the Songs program.");
-      Console.WriteLine(kashmir.getSongCount());
-      Song hungerStrike = new Song("Hunger Strike", "Pearl Jam", 700);
-      Console.WriteLine(hungerStrike.getSongCount());
-      Song myFavSong = new Song("My Favorite Song", "Frank Diaz", 600);
-      Console.WriteLine(Song.songCount);
+      // Song halo = new Song("Halo", "Perfect Circle", 300);
+      // Console.WriteLine(halo.artist);
+      // Console.WriteLine(Song.songCount);
+      // Song kashmir = new Song("Kashmir", "Led Zep", 500);
+      // Console.WriteLine(kashmir.duration);
+      // Console.WriteLine("This is song number " + Song.songCount + " created in the Songs program.");
+      // Console.WriteLine(kashmir.getSongCount());
+      // Song hungerStrike = new Song("Hunger Strike", "Pearl Jam", 700);
+      // Console.WriteLine(hungerStrike.getSongCount());
+      // Song myFavSong = new Song("My Favorite Song", "Frank Diaz", 600);
+      // Console.WriteLine(Song.songCount);
       ///
 
       // Movie pulpFiction = new Movie("Pulp Fiction", "Quentin Tarantino", "G");
@@ -404,6 +404,16 @@ namespace csharppractice
       //
 
       // Console.Write(GetPow(3, 2));
+
+      //
+
+      // int[] givenArray = { 2, 4, 6, 8, 20, 30 };
+      // Array.Sort(givenArray);
+      // Console.WriteLine("The largest element is: \n" + givenArray[givenArray.Length - 1]);
+
+      int[] givenArray = { 10, 40, 20, 50, 30, 1 };
+      Array.Sort(givenArray);
+      Console.WriteLine(givenArray[givenArray.Length - 1]);
 
       //
 
@@ -949,6 +959,10 @@ namespace csharppractice
       }
     }
     /////////////////////////////////////////////
+
+
+
+    ////////////////////////////////////////////
 
   }
 }

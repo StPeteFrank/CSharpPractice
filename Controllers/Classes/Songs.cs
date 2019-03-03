@@ -12,6 +12,7 @@ namespace Songs
     public string artist;
     public int duration;
     public static int songCount = 0;
+    // a static attribute is about the class.
     public Song(string aTitle, string aArtist, int aDuration)
     {
       title = aTitle;
