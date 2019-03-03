@@ -7,8 +7,8 @@ using System.Linq;
 // using csharppractice.ItalianChefs;
 // using csharppractice.UsefulTools;
 // using System.Threading.Tasks;
-// using csharppractice.Songs;
-using Movies;
+using Songs;
+// using Movies;
 // using csharppractice.Students;
 // using csharppractice.Books;
 // using csharppractice.ScaryBooks;
@@ -43,20 +43,20 @@ namespace csharppractice
 
       // UsefulTool.SayHi("Frank");
 
-      // Song halo = new Song("Halo", "Perfect Circle", 300);
-      // Console.WriteLine(halo.name);
-      // Console.WriteLine(Song.songCount);
-      // Song kashmir = new Song("Kashmir", "Led Zep", 500);
-      // Console.WriteLine(kashmir.name);
-      // Console.WriteLine("This is song number " + Song.songCount + " created in the Songs program.");
-      // Console.WriteLine(kashmir.getSongCount());
+      Song halo = new Song("Halo", "Perfect Circle", 300);
+      Console.WriteLine(halo.title);
+      Console.WriteLine(Song.songCount);
+      Song kashmir = new Song("Kashmir", "Led Zep", 500);
+      Console.WriteLine(kashmir.title);
+      Console.WriteLine("This is song number " + Song.songCount + " created in the Songs program.");
+      Console.WriteLine(kashmir.getSongCount());
 
       ///
 
-      Movie pulpFiction = new Movie("Pulp Fiction", "Quentin Tarantino", "Dog");
-      Movie abyss = new Movie("The Abyss", "James Cameron", "PG-13");
+      // Movie pulpFiction = new Movie("Pulp Fiction", "Quentin Tarantino", "G");
+      // Movie abyss = new Movie("The Abyss", "James Cameron", "PG-13");
 
-      Console.WriteLine(pulpFiction.Rating);
+      // Console.WriteLine(pulpFiction.Rating);
 
       ///
 

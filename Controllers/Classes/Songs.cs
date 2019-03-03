@@ -4,29 +4,25 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace csharppractice.Songs
+namespace Songs
 {
   class Song
   {
-    public string name;
-    public string band;
+    public string title;
+    public string artist;
     public int duration;
     public static int songCount = 0;
-    // This is a static attribute. It is giving my info about the class in general. 
-    // Not specific to the object itself.
-    public Song(string aName, string aBand, int aDuration)
+
+    public Song(string aTitle, string aArtist, int aDuration)
     {
-      name = aName;
-      band = aBand;
+      title = aTitle;
+      artist = aArtist;
       duration = aDuration;
       songCount++;
     }
-
     public int getSongCount()
     {
       return songCount;
     }
-    //Using this method you could now get the SongCount info from the specific object itself.
-
   }
 }
