@@ -44,12 +44,14 @@ namespace csharppractice
       // UsefulTool.SayHi("Frank");
 
       Song halo = new Song("Halo", "Perfect Circle", 300);
-      Console.WriteLine(halo.title);
+      Console.WriteLine(halo.artist);
       Console.WriteLine(Song.songCount);
       Song kashmir = new Song("Kashmir", "Led Zep", 500);
-      Console.WriteLine(kashmir.title);
+      Console.WriteLine(kashmir.duration);
       Console.WriteLine("This is song number " + Song.songCount + " created in the Songs program.");
       Console.WriteLine(kashmir.getSongCount());
+      Song hungerStrike = new Song("Hunger Strike", "Pearl Jam", 700);
+      Console.WriteLine(hungerStrike.getSongCount());
 
       ///
 
