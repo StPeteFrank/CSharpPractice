@@ -405,17 +405,30 @@ namespace csharppractice
 
       // Console.Write(GetPow(3, 2));
 
-      //
+      // Find the largest Element in an array.
 
       // int[] givenArray = { 2, 4, 6, 8, 20, 30 };
       // Array.Sort(givenArray);
       // Console.WriteLine("The largest element is: \n" + givenArray[givenArray.Length - 1]);
 
-      int[] givenArray = { 10, 40, 20, 50, 30, 1 };
-      Array.Sort(givenArray);
-      Console.WriteLine(givenArray[givenArray.Length - 1]);
+
+      // OR // ForLoop
+
+      // int[] givenArray = { 30, 10, 40, 9, 60 };
+      // int largestElement = 0;
+      // for (int i = 0; i < givenArray.Length; i++)
+      // {
+      //   if (givenArray[i] > largestElement)
+      //   {
+      //     largestElement = givenArray[i];
+      //   }
+      // }
+      // Console.WriteLine("The largest element in the array is: \n" + largestElement.ToString());
 
       //
+
+      int[] array = { 10, 6, 4, 12 };
+      Console.WriteLine(array.Min());
 
       Console.ReadLine();
 
