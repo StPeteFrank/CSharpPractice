@@ -18,5 +18,9 @@ namespace JapaneseChefs
     {
       Console.WriteLine("The japanese chef makes sashimi");
     }
+    public void MakeKimchi2()
+    {
+      Console.WriteLine("Is the japanese's kimchi original?");
+    }
   }
 }

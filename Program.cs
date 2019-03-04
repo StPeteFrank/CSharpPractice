@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 // using Students;
-using csharppractice.Chefs;
-using ItalianChefs;
-using JapaneseChefs;
-using KoreanChefs;
+// using csharppractice.Chefs;
+// using ItalianChefs;
+// using JapaneseChefs;
+// using KoreanChefs;
 // using csharppractice.UsefulTools;
 // using System.Threading.Tasks;
 // using Songs;
@@ -35,19 +35,21 @@ namespace csharppractice
       // Console.WriteLine("Does student1 have honors? " + student1.HasHonors());
       // Console.WriteLine("Does student2 have honors? " + student2.HasHonors());
 
-      Chef chef = new Chef();
-      chef.MakeChicken();
+      //
 
-      ItalianChef italianChef = new ItalianChef();
-      italianChef.MakePasta();
+      // Chef chef = new Chef();
+      // chef.MakeChicken();
 
-      JapaneseChef japanaesChef = new JapaneseChef();
-      japanaesChef.MakeSashimi();
+      // ItalianChef italianChef = new ItalianChef();
+      // italianChef.MakePasta();
 
-      KoreanChef koreanChef = new KoreanChef();
-      koreanChef.MakePasta();
+      // JapaneseChef japanaesChef = new JapaneseChef();
+      // japanaesChef.MakeKimchi2();
 
+      // KoreanChef koreanChef = new KoreanChef();
+      // koreanChef.MakeKimchi();
 
+      //
 
       // UsefulTool.SayHi("Frank");
 
