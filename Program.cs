@@ -514,9 +514,9 @@ namespace csharppractice
     // or //
     static int SumArray2()
     {
-      int[] array1 = { 1, 3, 5, 7 };
-      int sum1 = array1.Sum();
-      return (sum1);
+      int[] arr = { 1, 3, 5, 7 };
+      int sum = arr.Sum();
+      return (sum);
     }
 
     /////////////////// WhiteBoard Question 3/4 SumOddArray
