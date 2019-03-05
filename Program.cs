@@ -413,34 +413,47 @@ namespace csharppractice
 
       //
 
+
+
       // Console.Write(GetPow(3, 2));
 
       // Find the largest Element in an array.
 
-      // int[] givenArray = { 2, 4, 6, 8, 20, 30 };
+      // int[] givenArray = { 2, 4, 6, 8, 20, 30, 23 };
       // Array.Sort(givenArray);
       // Console.WriteLine("The largest element is: \n" + givenArray[givenArray.Length - 1]);
 
       //
 
-
-
+      // int[] givenArray = { 2, 4, 6, 8, 20, 30, 23 };
+      // Array.Sort(givenArray);
+      // Console.WriteLine("The smallest element is: \n" + givenArray[givenArray.Length - givenArray.Length]);
 
       //
 
-      // int[] array = { 4, 9, 6, 19, 2 };
-      // int number = 0;
-      // for (int i = 0; i < array.Length; i++)
+      // int[] givenArray = { 2, 1, 5, 4, 7, 6 };
+      // int largestElement = 0;
+      // for (int i = 0; i < givenArray.Length; i++)
       // {
-      //   if (array[i] > number)
+      //   if (givenArray[i] > largestElement)
       //   {
-      //     number = array[i];
+      //     largestElement = givenArray[i];
       //   }
       // }
-      // Console.WriteLine(number);
+      // Console.WriteLine("The largest element in the array is \n" + largestElement);
 
       //
 
+      // int[] givenArray = { 2, 1, 5, 4, 7, 6 };
+      // int smallestElement = 0;
+      // for (int i = 0; i < givenArray.Length; i++)
+      // {
+      //   if (givenArray[i] > smallestElement)
+      //   {
+      //     smallestElement = givenArray[+1];
+      //   }
+      // }
+      // Console.WriteLine("The smallest element in the array is \n" + smallestElement);
 
       // OR // ForLoop
 
@@ -452,6 +465,7 @@ namespace csharppractice
       //   {
       //     largestElement = givenArray[i];
       //   }
+      //   return largestElement;
       // }
       // Console.WriteLine("The largest element in the array is: \n" + largestElement.ToString());
 
@@ -465,21 +479,55 @@ namespace csharppractice
       // int[] array = { 10, 6, 4, 12 };
       // Console.WriteLine(array.Max());
 
+      // Summing an array //
+
+      // int[] arr = new int[] { 1, 2, 3 };
+      // int sum = 0;
+      // for (int i = 0; i < arr.Length; i++)
+      // {
+      //   sum += arr[i];
+      // }
+      // Console.WriteLine(sum);
+
+      Console.WriteLine(SumArray2());
+
+      // Console.WriteLine(SumArray());
+
       Console.ReadLine();
 
     }
     //////////////////////////////////////
 
+    ////////////////// WhiteBoard Question 3/4 SumArray
+    static int SumArray(int[] arr, int sum)
+    {
+      // int[] arr = new int[] { 1, 2, 3 };
+      // int sum = 0;
+      for (int i = 0; i < arr.Length; i++)
+      {
+        sum += arr[i];
+      }
+      return sum;
+    }
+    // or //
+    static int SumArray2()
+    {
+      int[] array1 = { 1, 3, 5, 7 };
+      int sum1 = array1.Sum();
+      return (sum1);
+    }
+    /////////////////// WhiteBoard Question 3/4 SumOddArray
 
 
-    /////////////////////////////////////
+
+    //////////////////////////////////////
 
     static int GetPow(int baseNum, int powNum)
     {
       int result = 1;
       for (int i = 0; i < powNum; i++)
       {
-        result *= baseNum;  // result = result * baseNUm;
+        result *= baseNum;  // result = result * baseNum;
       }
       return result;
     }
