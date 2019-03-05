@@ -495,6 +495,8 @@ namespace csharppractice
 
       // Console.WriteLine(SumOddArray());
 
+      // Console.WriteLine(LargestInArray());
+
       Console.ReadLine();
 
     }
@@ -523,13 +525,13 @@ namespace csharppractice
 
     // static int SumOddArray()
     // {
-    //   int[] array = new int[9] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+    //   int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
     //   int sum = 0;
-    //   for (int = 0; i < array.Length; i++)
+    //   for (int i = 0; i < arr.Length; i++)
     //   {
-    //     if (array[i] % 2 == 1)
+    //     if (arr[i] % 2 == 1)
     //     {
-    //       sum = sum + array[i];
+    //       sum += arr[i];
     //     }
     //     return (sum);
     //   }
@@ -547,6 +549,21 @@ namespace csharppractice
     //   }
     // }
 
+    /////////////////// WhiteBoard Question 3/4 LargestInArray
+
+    // static int LargestInArray()
+    // {
+    //   int[] arr = { 10, 20, 30, 15, 25 };
+    //   int largest = 0;
+    //   for (int i = 0; i < arr.Length; i++)
+    //   {
+    //     if (arr[i] > largest)
+    //     {
+    //       largest = arr[i];
+    //     }
+    //     return largest;
+    //   }
+    // }
     //////////////////////////////////////
 
     static int GetPow(int baseNum, int powNum)
