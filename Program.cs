@@ -411,10 +411,6 @@ namespace csharppractice
 
       // ForLoop();
 
-      //
-
-
-
       // Console.Write(GetPow(3, 2));
 
       // Find the largest Element in an array.
@@ -493,7 +489,7 @@ namespace csharppractice
 
       Console.WriteLine(SumArray2());
 
-      Console.WriteLine(SumOddArray());
+      Console.WriteLine(SumOddArray(new int[] { 5, 7, 6, 10, 12, 13 }, 0));
 
       // Console.WriteLine(SumOddArray2());
 
@@ -525,10 +521,8 @@ namespace csharppractice
 
     /////////////////// WhiteBoard Question 3/4 SumOddArray
 
-    static int SumOddArray()
+    static int SumOddArray(int[] arr, int sum)
     {
-      int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-      int sum = 0;
       for (int i = 0; i < arr.Length; i++)
       {
         if (arr[i] % 2 == 1)
@@ -545,9 +539,9 @@ namespace csharppractice
     // {
     //   int[] array2 = { 1, 2, 3, 4, 5, 6, 7 };
     //   IEnumerable<int> odds = array2.Where(x => x % 2 != 0);
-    //   foreach(int odd in odds)
+    //   foreach (int odd in odds)
     //   {
-    //     return(odd);
+    //     return (odd);
     //   }
     // }
 
