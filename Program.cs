@@ -489,13 +489,15 @@ namespace csharppractice
       // }
       // Console.WriteLine(sum);
 
-      Console.WriteLine(SumArray());
+      Console.WriteLine(SumArray(new int[] { 1, 2, 3 }, 0));
 
       Console.WriteLine(SumArray2());
 
-      // Console.WriteLine(SumOddArray());
+      Console.WriteLine(SumOddArray());
 
-      // Console.WriteLine(LargestInArray());
+      // Console.WriteLine(SumOddArray2());
+
+      Console.WriteLine(LargestInArray());
 
       Console.ReadLine();
 
@@ -503,10 +505,10 @@ namespace csharppractice
     //////////////////////////////////////
 
     ////////////////// WhiteBoard Question 3/4 SumArray
-    static int SumArray()   // (int[] arr, int sum)
+    static int SumArray(int[] arr, int sum)
     {
-      int[] arr = new int[] { 1, 2, 3 };
-      int sum = 0;
+      // int[] arr = new int[] { 1, 2, 3 };
+      // int sum = 0;
       for (int i = 0; i < arr.Length; i++)
       {
         sum += arr[i];
@@ -523,23 +525,23 @@ namespace csharppractice
 
     /////////////////// WhiteBoard Question 3/4 SumOddArray
 
-    // static int SumOddArray()
-    // {
-    //   int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-    //   int sum = 0;
-    //   for (int i = 0; i < arr.Length; i++)
-    //   {
-    //     if (arr[i] % 2 == 1)
-    //     {
-    //       sum += arr[i];
-    //     }
-    //     return (sum);
-    //   }
-    // }
+    static int SumOddArray()
+    {
+      int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+      int sum = 0;
+      for (int i = 0; i < arr.Length; i++)
+      {
+        if (arr[i] % 2 == 1)
+        {
+          sum += arr[i];
+        }
+      }
+      return (sum);
+    }
 
     // or //
 
-    // static int SumOddArray()
+    // static int SumOddArray2()
     // {
     //   int[] array2 = { 1, 2, 3, 4, 5, 6, 7 };
     //   IEnumerable<int> odds = array2.Where(x => x % 2 != 0);
@@ -551,19 +553,19 @@ namespace csharppractice
 
     /////////////////// WhiteBoard Question 3/4 LargestInArray
 
-    // static int LargestInArray()
-    // {
-    //   int[] arr = { 10, 20, 30, 15, 25 };
-    //   int largest = 0;
-    //   for (int i = 0; i < arr.Length; i++)
-    //   {
-    //     if (arr[i] > largest)
-    //     {
-    //       largest = arr[i];
-    //     }
-    //     return largest;
-    //   }
-    // }
+    static int LargestInArray()
+    {
+      int[] arr = { 10, 20, 30, 15, 25 };
+      int largest = 0;
+      for (int i = 0; i < arr.Length; i++)
+      {
+        if (arr[i] > largest)
+        {
+          largest = arr[i];
+        }
+      }
+      return largest;
+    }
     //////////////////////////////////////
 
     static int GetPow(int baseNum, int powNum)
@@ -571,7 +573,7 @@ namespace csharppractice
       int result = 1;
       for (int i = 0; i < powNum; i++)
       {
-        result *= baseNum;  // result = result * baseNum;
+        result *= baseNum;
       }
       return result;
     }
