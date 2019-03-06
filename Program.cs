@@ -485,24 +485,27 @@ namespace csharppractice
       // }
       // Console.WriteLine(sum);
 
-      // Console.WriteLine(SumArray(new int[] { 1, 2, 3 }, 0));
+
+      Console.WriteLine(SumArray(new int[] { 3, 6, 8, 1, 9, 10 }, 0));
 
       // Console.WriteLine(SumArray2(new int[] { 1, 3, 5, 7, 40 }));
 
-      // Console.WriteLine(SumOddArray(new int[] { 5, 7, 6, 10, 12, 13 }, 0));
+      Console.WriteLine(SumOddArray(new int[] { 2, 1, 4, 5, 7, 6 }, 0));
 
       // Console.WriteLine(SumOddArray2());
 
-      Console.WriteLine(LargestInArray());
+      Console.WriteLine(LargestInArray(new int[] { 1, 2, 3, 4, 5, 6, 7, -10 }, Int32.MinValue));
 
       Console.WriteLine(LargestInArray2(new int[] { 2, 6, 99 }));
 
-      Console.WriteLine(SmallestInArray());
+      // Console.WriteLine(SmallestInArray(new int[] { 20, 10, 40, 60, 50 }, Int32.MaxValue));
+
+      // Console.WriteLine(SmallestInArray2(new int[] { 6, 3, 10, -19, 40, 4 }));
 
       Console.ReadLine();
 
     }
-    //////////////////////////////////////
+    ////////////////////////////////////// 
 
     ////////////////// WhiteBoard Question 3/4 SumArray
     static int SumArray(int[] arr, int sum)
@@ -515,6 +518,7 @@ namespace csharppractice
       }
       return sum;
     }
+
     // or //
     static int SumArray2(int[] arr)
     {
@@ -538,10 +542,10 @@ namespace csharppractice
 
     // or //
 
-    // static int SumOddArray2()
+    // static int SumOddArray2(int[] array2)
     // {
-    //   int[] array2 = { 1, 2, 3, 4, 5, 6, 7 };
     //   IEnumerable<int> odds = array2.Where(x => x % 2 != 0);
+
     //   foreach (int odd in odds)
     //   {
     //     return (odd);
@@ -550,10 +554,20 @@ namespace csharppractice
 
     /////////////////// WhiteBoard Question 3/4 LargestInArray
 
-    static int LargestInArray()
+    // static int LargestInArray(int[] arr, int largest)
+    // {
+    //   for (int i = 0; i < arr.Length; i++)
+    //   {
+    //     if (arr[i] > largest)
+    //     {
+    //       largest = arr[i];
+    //     }
+    //   }
+    //   return largest;
+    // }
+
+    static int LargestInArray(int[] arr, int largest)
     {
-      int[] arr = { 40, 35, 60, -10, 20, 30, 15, 25, 50 };
-      int largest = 0;
       for (int i = 0; i < arr.Length; i++)
       {
         if (arr[i] > largest)
@@ -565,18 +579,19 @@ namespace csharppractice
     }
 
     // or //
-    static int LargestInArray2(int[] array)
+
+    static int LargestInArray2(int[] arr)
     {
-      return array.Max();
+      return arr.Max();
     }
 
 
     ///////////////////// WhiteBoard Question 3/4 SmallestInArray
 
-    static int SmallestInArray()
+    static int SmallestInArray(int[] arr, int smallest)
     {
-      int[] arr = { 40, 35, 60, -10, 20, 30, 15, 25, 50 };
-      int smallest = Int32.MaxValue;                //Int32.MaxValue
+      // int[] arr = { 40, 35, 60, -10, 20, 30, 15, 25, 50 };
+      // int smallest = Int32.MaxValue;                //Int32.MaxValue
       for (int i = 0; i < arr.Length; i++)
       {
         if (arr[i] < smallest)
@@ -585,6 +600,12 @@ namespace csharppractice
         }
       }
       return smallest;
+    }
+    // or //
+
+    static int SmallestInArray2(int[] arr)
+    {
+      return arr.Min();
     }
 
     ///////////////////////////////////////////////
