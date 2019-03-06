@@ -551,16 +551,16 @@ namespace csharppractice
 
     /////////////////// WhiteBoard Question 3/4 LargestInArray
 
-    static int LargestInArray(int[] arr, int largest)
+    static int LargestInArray(int[] arr, int largests)
     {
       for (int i = 0; i < arr.Length; i++)
       {
-        if (arr[i] > largest)
+        if (arr[i] > largests)
         {
-          largest = arr[i];
+          largests = arr[i];
         }
       }
-      return largest;
+      return largests;
     }
 
     // or //
