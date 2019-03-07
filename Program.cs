@@ -512,7 +512,7 @@ namespace csharppractice
     {
       for (int i = 0; i < arr.Length; i++)
       {
-        sum += arr[i];
+        sum = sum + arr[i];
       }
       return sum;
     }
