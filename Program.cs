@@ -396,8 +396,13 @@ namespace csharppractice
       // Console.WriteLine(squaredAway2);
 
       ///
-
-      // Calculator();
+      Console.Write("Enter your first number: ");
+      int num1 = Convert.ToInt32(Console.ReadLine());
+      Console.Write("Enter a math operator: ");
+      string op = Console.ReadLine();
+      Console.Write("Enter your second number: ");
+      int num2 = Convert.ToInt32(Console.ReadLine());
+      Calculator(num1, op, num2);
 
       ///
 
@@ -677,16 +682,16 @@ namespace csharppractice
 
     /////////////////////////////////////
 
-    static void Calculator()
+    static void Calculator(int num1, string op, int num2)
     {
-      Console.Write("Enter your first number: ");
-      int num1 = Convert.ToInt32(Console.ReadLine());
+      // Console.Write("Enter your first number: ");
+      // int num1 = Convert.ToInt32(Console.ReadLine());
 
-      Console.Write("Enter a math operator: ");
-      string op = Console.ReadLine();
+      // Console.Write("Enter a math operator: ");
+      // string op = Console.ReadLine();
 
-      Console.Write("Enter your second number: ");
-      int num2 = Convert.ToInt32(Console.ReadLine());
+      // Console.Write("Enter your second number: ");
+      // int num2 = Convert.ToInt32(Console.ReadLine());
 
       if (op == "+")
       {
