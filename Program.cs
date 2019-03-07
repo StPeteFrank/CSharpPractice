@@ -396,13 +396,7 @@ namespace csharppractice
       // Console.WriteLine(squaredAway2);
 
       ///
-      Console.Write("Enter your first number: ");
-      int num1 = Convert.ToInt32(Console.ReadLine());
-      Console.Write("Enter a math operator: ");
-      string op = Console.ReadLine();
-      Console.Write("Enter your second number: ");
-      int num2 = Convert.ToInt32(Console.ReadLine());
-      Calculator(num1, op, num2);
+
 
       ///
 
@@ -489,6 +483,14 @@ namespace csharppractice
       //   sum += arr[i];
       // }
       // Console.WriteLine(sum);
+
+      Console.Write("Enter your first number: ");
+      int num1 = Convert.ToInt32(Console.ReadLine());
+      Console.Write("Enter a math operator: ");
+      string op = Convert.ToString(Console.ReadLine());
+      Console.Write("Enter your second number: ");
+      int num2 = Convert.ToInt32(Console.ReadLine());
+      Calculator(num1, op, num2);
 
 
       Console.WriteLine(SumArray(new int[] { 3, 6, 8, 1, 9, 10, 2 }, 0));
@@ -711,7 +713,7 @@ namespace csharppractice
       }
       else
       {
-        Console.WriteLine("Youve entered an incorrect operator!");
+        Console.WriteLine("You've entered an incorrect operator!");
       }
     }
 
