@@ -37,6 +37,16 @@ namespace csharppractice
 
       //
 
+      // string firstName = "joe";
+      // System.Text.StringBuilder fn = new System.Text.StringBuilder(firstName);
+
+      // fn[0] = System.Char.ToUpper(fn[0]);
+      // string corrected = fn.ToString();
+      // System.Console.WriteLine(corrected);
+
+      //
+
+      // Output: How does Microsoft Word deal with the Caps Lock key?
       // Chef chef = new Chef();
       // chef.MakeChicken();
 
@@ -484,35 +494,65 @@ namespace csharppractice
       // }
       // Console.WriteLine(sum);
 
-      Console.Write("Enter your first number: ");
-      int num1 = Convert.ToInt32(Console.ReadLine());
-      Console.Write("Enter a math operator: ");
-      string op = Convert.ToString(Console.ReadLine());
-      Console.Write("Enter your second number: ");
-      int num2 = Convert.ToInt32(Console.ReadLine());
-      Calculator(num1, op, num2);
+      // Console.Write("Enter your first number: ");
+      // int num1 = Convert.ToInt32(Console.ReadLine());
+      // Console.Write("Enter a math operator: ");
+      // string op = Convert.ToString(Console.ReadLine());
+      // Console.Write("Enter your second number: ");
+      // int num2 = Convert.ToInt32(Console.ReadLine());
+      // Calculator(num1, op, num2);
 
 
-      Console.WriteLine(SumArray(new int[] { 3, 6, 8, 1, 9, 10, 2 }, 0));   //arguments
+      Console.WriteLine(SumArray(new int[] { 3, 6, 8, 1, 9, 10, 2 }, 0));
 
-      Console.WriteLine(SumArray2(new int[] { 1, 3, 5, 7, 40 }));
+      // Console.WriteLine(SumArray2(new int[] { 1, 3, 5, 7, 40 }));
 
-      Console.WriteLine(SumOddArray(new int[] { 2, 1, 4, 5, 7, 6 }, 0));
+      // Console.WriteLine(SumOddArray(new int[] { 2, 1, 4, 5, 7, 6 }, 0));
 
-      // Console.WriteLine(SumOddArray2());
+      // // Console.WriteLine(SumOddArray2());
 
-      Console.WriteLine(LargestInArray(new int[] { 1, 2, 3, 4, 5, 6, 7, -10 }, Int32.MinValue));
+      // Console.WriteLine(LargestInArray(new int[] { 1, 2, 3, 4, 5, 6, 7, -10 }, Int32.MinValue));
 
-      Console.WriteLine(LargestInArray2(new int[] { 2, 6, 99 }));
+      // Console.WriteLine(LargestInArray(new int[] { 1, 2, 3, 4, 5, 6, 7, -10 }));
 
-      Console.WriteLine(SmallestInArray(new int[] { 30, 40, 20, 10, 10, 90 }, Int32.MaxValue));
+      // Console.WriteLine(LargestInArray2(new int[] { 2, 6, 99 }));
 
-      Console.WriteLine(SmallestInArray2(new int[] { 6, 3, 10, -19, 40, 4 }));
+      // Console.WriteLine(SmallestInArray(new int[] { 30, 40, 20, 10, 10, 90 }, Int32.MaxValue));
+
+      // Console.WriteLine(SmallestInArray2(new int[] { 6, 3, 10, -19, 40, 4 }));
+
+      // Console.WriteLine(SumForEach(new int[] { 3, 6, 9, 12 }, 0));
 
       Console.ReadLine();
 
     }
     ////////////////////////////////////// 
+
+
+    static int LargestInArray(int[] arr)
+    {
+      int largest = arr[0];
+      for (int i = 1; i < arr.Length; i++)
+      {
+        if (largest < arr[i])    //for SmallestInArray use:  (smallest > arr[i])
+        {
+          largest = arr[i];
+        }
+      }
+      return largest;
+    }
+
+
+    ////////////////////////////////////////****** */
+
+    static int SumForEach(int[] arr, int sum)
+    {
+      foreach (int number in arr)
+      {
+        sum += number;
+      }
+      return sum;
+    }
 
     ////////////////// WhiteBoard Question 3/4 SumArray
     static int SumArray(int[] arr, int sum)    //parameters
@@ -548,7 +588,7 @@ namespace csharppractice
 
     // static int SumOddArray2(int[] array2)
     // {
-    //   IEnumerable<int> odds = array2.Where(x => x % 2 != 0);
+    //   IEnumerable<int> odds = array2.Where(x => x % 2 == 1);
 
     //   foreach (int odd in odds)
     //   {
@@ -572,9 +612,12 @@ namespace csharppractice
 
     // or //
 
-    static int LargestInArray2(int[] arr)
+    static int LargestInArray2(int[] givenArray)
     {
-      return arr.Max();
+
+      Array.Sort(givenArray);
+      int largest = givenArray[givenArray.Length - 1];
+      return largest;
     }
 
 
