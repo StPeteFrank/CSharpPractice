@@ -486,7 +486,7 @@ namespace csharppractice
       // Console.WriteLine(sum);
 
 
-      Console.WriteLine(SumArray(new int[] { 3, 6, 8, 1, 9, 10 }, 0));
+      Console.WriteLine(SumArray(new int[] { 3, 6, 8, 1, 9, 10, 2 }, 0));
 
       Console.WriteLine(SumArray2(new int[] { 1, 3, 5, 7, 40 }));
 
@@ -512,7 +512,7 @@ namespace csharppractice
     {
       for (int i = 0; i < arr.Length; i++)
       {
-        sum = sum + arr[i];
+        sum += arr[i];
       }
       return sum;
     }
