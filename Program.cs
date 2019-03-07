@@ -493,7 +493,7 @@ namespace csharppractice
       Calculator(num1, op, num2);
 
 
-      Console.WriteLine(SumArray(new int[] { 3, 6, 8, 1, 9, 10, 2 }, 0));
+      Console.WriteLine(SumArray(new int[] { 3, 6, 8, 1, 9, 10, 2 }, 0));   //arguments
 
       Console.WriteLine(SumArray2(new int[] { 1, 3, 5, 7, 40 }));
 
@@ -515,7 +515,7 @@ namespace csharppractice
     ////////////////////////////////////// 
 
     ////////////////// WhiteBoard Question 3/4 SumArray
-    static int SumArray(int[] arr, int sum)
+    static int SumArray(int[] arr, int sum)    //parameters
     {
       for (int i = 0; i < arr.Length; i++)
       {
