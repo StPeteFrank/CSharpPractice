@@ -513,7 +513,7 @@ namespace csharppractice
 
       // Console.WriteLine(LargestInArray(new int[] { 1, 2, 3, 4, 5, 6, 7, -10 }, Int32.MinValue));
 
-      // Console.WriteLine(LargestInArray(new int[] { 1, 2, 3, 4, 5, 6, 7, -10 }));
+      Console.WriteLine(LargestInArray1(new int[] { 1, 2, 3, 4, 5, 6, 7, -10 }));
 
       // Console.WriteLine(LargestInArray2(new int[] { 2, 6, 99 }));
 
@@ -529,7 +529,7 @@ namespace csharppractice
     ////////////////////////////////////// 
 
 
-    static int LargestInArray(int[] arr)
+    static int LargestInArray1(int[] arr)
     {
       int largest = arr[0];
       for (int i = 1; i < arr.Length; i++)
