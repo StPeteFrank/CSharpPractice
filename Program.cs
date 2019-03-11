@@ -529,12 +529,25 @@ namespace csharppractice
     ////////////////////////////////////// 
 
 
+    // static int LargestInArray1(int[] arr)
+    // {
+    //   int largest = arr[0];
+    //   for (int i = 1; i < arr.Length; i++)
+    //   {
+    //     if (largest < arr[i])    //for SmallestInArray use:  (smallest > arr[i])
+    //     {
+    //       largest = arr[i];
+    //     }
+    //   }
+    //   return largest;
+    // }
+
     static int LargestInArray1(int[] arr)
     {
       int largest = arr[0];
       for (int i = 1; i < arr.Length; i++)
       {
-        if (largest < arr[i])    //for SmallestInArray use:  (smallest > arr[i])
+        if (largest < arr[i])
         {
           largest = arr[i];
         }
