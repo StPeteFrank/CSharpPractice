@@ -528,33 +528,24 @@ namespace csharppractice
     }
     ////////////////////////////////////// 
 
+    static int LargestInArray1(int[] arr)
+    {
+      int element = arr[0];
+      for (int i = 1; i < arr.Length; i++)
+      {
+        if (element < arr[i])
+        {
+          element = arr[i];
+        }
+      }
+      return element;
+    }
+    // or //
 
     // static int LargestInArray1(int[] arr)
     // {
-    //   int largest = arr[0];
-    //   for (int i = 1; i < arr.Length; i++)
-    //   {
-    //     if (largest < arr[i])    //for SmallestInArray use:  (smallest > arr[i])
-    //     {
-    //       largest = arr[i];
-    //     }
-    //   }
-    //   return largest;
+    //   return arr.Max();
     // }
-
-    static int LargestInArray1(int[] arr)
-    {
-      int largest = arr[0];
-      for (int i = 1; i < arr.Length; i++)
-      {
-        if (largest < arr[i])
-        {
-          largest = arr[i];
-        }
-      }
-      return largest;
-    }
-
 
     ////////////////////////////////////////****** */
 
@@ -648,12 +639,6 @@ namespace csharppractice
       return smallest;
     }
 
-    // or //
-
-    static int SmallestInArray2(int[] arr)
-    {
-      return arr.Min();
-    }
 
     ///////////////////////////////////////////////
 
