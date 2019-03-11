@@ -503,11 +503,11 @@ namespace csharppractice
       // Calculator(num1, op, num2);
 
 
-      Console.WriteLine(SumArray(new int[] { 3, 6, 8, 1, 9, 10, 2 }, 0));
+      Console.WriteLine(SumArray(new int[] { 3, 6, 8, 1, 9, 10, 2 }));
 
       // Console.WriteLine(SumArray2(new int[] { 1, 3, 5, 7, 40 }));
 
-      // Console.WriteLine(SumOddArray(new int[] { 2, 1, 4, 5, 7, 6 }, 0));
+      Console.WriteLine(SumOddArray(new int[] { 2, 1, 4, 5, 7, 6 }));
 
       // // Console.WriteLine(SumOddArray2());
 
@@ -521,7 +521,7 @@ namespace csharppractice
 
       // Console.WriteLine(SmallestInArray2(new int[] { 6, 3, 10, -19, 40, 4 }));
 
-      // Console.WriteLine(SumForEach(new int[] { 3, 6, 9, 12 }, 0));
+      Console.WriteLine(SumForEach(new int[] { 3, 6, 9, 12 }));
 
       Console.ReadLine();
 
@@ -549,8 +549,9 @@ namespace csharppractice
 
     ////////////////////////////////////////****** */
 
-    static int SumForEach(int[] arr, int sum)
+    static int SumForEach(int[] arr)
     {
+      int sum = 0;
       foreach (int number in arr)
       {
         sum += number;
@@ -559,9 +560,10 @@ namespace csharppractice
     }
 
     ////////////////// WhiteBoard Question 3/4 SumArray
-    static int SumArray(int[] arr, int sum)    //parameters
+    static int SumArray(int[] arr)    //parameters
     {
-      for (int i = 0; i < arr.Length; i++)
+      int sum = arr[0];
+      for (int i = 1; i < arr.Length; i++)
       {
         sum += arr[i];
       }
@@ -576,13 +578,27 @@ namespace csharppractice
 
     /////////////////// WhiteBoard Question 3/4 SumOddArray
 
-    static int SumOddArray(int[] arr, int sum)
+    // static int SumOddArray(int[] arr)
+    // {
+    //   int sum = 0;
+    //   for (int i = 0; i < arr.Length; i++)
+    //   {
+    //     if (arr[i] % 2 == 1)
+    //     {
+    //       sum += arr[i];
+    //     }
+    //   }
+    //   return sum;
+    // }
+
+    static int SumOddArray(int[] arr)
     {
+      int sum = 0;
       for (int i = 0; i < arr.Length; i++)
       {
         if (arr[i] % 2 == 1)
         {
-          sum += arr[i];
+          sum = sum + arr[i];
         }
       }
       return sum;
