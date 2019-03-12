@@ -528,6 +528,19 @@ namespace csharppractice
     }
     ////////////////////////////////////// 
 
+    // static int LargestInArray1(int[] arr)
+    // {
+    //   int element = arr[0];
+    //   for (int i = 1; i < arr.Length; i++)
+    //   {
+    //     if (element < arr[i])
+    //     {
+    //       element = arr[i];
+    //     }
+    //   }
+    //   return element;
+    // }
+
     static int LargestInArray1(int[] arr)
     {
       int element = arr[0];
@@ -540,6 +553,7 @@ namespace csharppractice
       }
       return element;
     }
+
     // or //
 
     // static int LargestInArray1(int[] arr)
@@ -562,8 +576,8 @@ namespace csharppractice
     ////////////////// WhiteBoard Question 3/4 SumArray
     static int SumArray(int[] arr)    //parameters
     {
-      int sum = arr[0];
-      for (int i = 1; i < arr.Length; i++)
+      int sum = 0;
+      for (int i = 0; i < arr.Length; i++)
       {
         sum += arr[i];
       }
@@ -578,19 +592,6 @@ namespace csharppractice
 
     /////////////////// WhiteBoard Question 3/4 SumOddArray
 
-    // static int SumOddArray(int[] arr)
-    // {
-    //   int sum = 0;
-    //   for (int i = 0; i < arr.Length; i++)
-    //   {
-    //     if (arr[i] % 2 == 1)
-    //     {
-    //       sum += arr[i];
-    //     }
-    //   }
-    //   return sum;
-    // }
-
     static int SumOddArray(int[] arr)
     {
       int sum = 0;
@@ -598,7 +599,7 @@ namespace csharppractice
       {
         if (arr[i] % 2 == 1)
         {
-          sum = sum + arr[i];
+          sum += arr[i];
         }
       }
       return sum;
