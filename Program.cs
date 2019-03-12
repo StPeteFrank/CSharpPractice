@@ -561,16 +561,7 @@ namespace csharppractice
     }
 
     ////////////////// WhiteBoard Question 3/4 SumArray
-    // static int SumArray(int[] arr)    //parameters
-    // {
-    //   int sum = 0;
-    //   for (int i = 0; i < arr.Length; i++)
-    //   {
-    //     sum += arr[i];
-    //   }
-    //   return sum;
-    // }
-    static int SumArray(int[] arr)
+    static int SumArray(int[] arr)    //parameters
     {
       int sum = 0;
       for (int i = 0; i < arr.Length; i++)
@@ -581,12 +572,25 @@ namespace csharppractice
     }
 
     // or //
-    static int SumArray2(int[] arr)
-    {
-      return arr.Sum();
-    }
+    // static int SumArray2(int[] arr)
+    // {
+    //   return arr.Sum();
+    // }
 
     /////////////////// WhiteBoard Question 3/4 SumOddArray
+
+    // static int SumOddArray(int[] arr)
+    // {
+    //   int sum = 0;
+    //   for (int i = 0; i < arr.Length; i++)
+    //   {
+    //     if (arr[i] % 2 == 1)
+    //     {
+    //       sum += arr[i];
+    //     }
+    //   }
+    //   return sum;
+    // }
 
     static int SumOddArray(int[] arr)
     {
