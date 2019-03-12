@@ -523,6 +523,8 @@ namespace csharppractice
 
       Console.WriteLine(SumForEach(new int[] { 3, 6, 9, 12 }));
 
+      Console.WriteLine(SquareSum(new int[] { 1, 2, 2 }));
+
       Console.ReadLine();
 
     }
@@ -578,19 +580,6 @@ namespace csharppractice
     // }
 
     /////////////////// WhiteBoard Question 3/4 SumOddArray
-
-    // static int SumOddArray(int[] arr)
-    // {
-    //   int sum = 0;
-    //   for (int i = 0; i < arr.Length; i++)
-    //   {
-    //     if (arr[i] % 2 == 1)
-    //     {
-    //       sum += arr[i];
-    //     }
-    //   }
-    //   return sum;
-    // }
 
     static int SumOddArray(int[] arr)
     {
@@ -1023,7 +1012,7 @@ namespace csharppractice
 
     // Complete the square sum method so that it squares each number passed into it and then sums the results together.
 
-    // For example: squareSum([1, 2, 2]) should return 9 because 1^2 + 2^2 + 2^2 = 9.
+    // For example: SquareSum([1, 2, 2]) should return 9 because 1^2 + 2^2 + 2^2 = 9.
     public static int SquareSum(int[] n)
     {
       int squareSum = 0;
