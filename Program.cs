@@ -502,7 +502,7 @@ namespace csharppractice
       // int num2 = Convert.ToInt32(Console.ReadLine());
       // Calculator(num1, op, num2);
 
-      Console.WriteLine(SumOddList(new int[] { 3, 7, 20, 17, 23, 100 }));
+
       Console.WriteLine(SumArray(new int[] { 3, 6, 8, 1, 9, 10, 2 }));
 
       // Console.WriteLine(SumArray2(new int[] { 1, 3, 5, 7, 40 }));
@@ -581,27 +581,14 @@ namespace csharppractice
 
     /////////////////// WhiteBoard Question 3/4 SumOddArray
 
-    // static int SumOddArray(int[] arr)
-    // {
-    //   int sum = 0;
-    //   for (int i = 0; i < arr.Length; i++)
-    //   {
-    //     if (arr[i] % 2 == 1)
-    //     {
-    //       sum += arr[i];
-    //     }
-    //   }
-    //   return sum;
-    // }
-
-    static int SumOddList(int[] list)
+    static int SumOddArray(int[] arr)
     {
       int sum = 0;
-      for (int i = 0; i < list.Length; i++)
+      for (int i = 0; i < arr.Length; i++)
       {
-        if (list[i] % 2 == 1)
+        if (arr[i] % 2 == 1)
         {
-          sum += list[i];
+          sum += arr[i];
         }
       }
       return sum;
@@ -671,6 +658,10 @@ namespace csharppractice
       }
       return element;
     }
+    // static int SmallestInArray2(int[] arr)
+    // {
+    //   return arr.Min();
+    // }
 
 
     ///////////////////////////////////////////////
