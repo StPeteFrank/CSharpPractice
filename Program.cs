@@ -502,7 +502,7 @@ namespace csharppractice
       // int num2 = Convert.ToInt32(Console.ReadLine());
       // Calculator(num1, op, num2);
 
-
+      Console.WriteLine(SumOddList(new int[] { 3, 7, 20, 17, 23, 100 }));
       Console.WriteLine(SumArray(new int[] { 3, 6, 8, 1, 9, 10, 2 }));
 
       // Console.WriteLine(SumArray2(new int[] { 1, 3, 5, 7, 40 }));
@@ -594,14 +594,14 @@ namespace csharppractice
     //   return sum;
     // }
 
-    static int SumOddArray(int[] list)
+    static int SumOddList(int[] list)
     {
       int sum = 0;
       for (int i = 0; i < list.Length; i++)
       {
         if (list[i] % 2 == 1)
         {
-          sum = sum + list[i];
+          sum += list[i];
         }
       }
       return sum;
