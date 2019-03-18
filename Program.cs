@@ -503,11 +503,11 @@ namespace csharppractice
       // Calculator(num1, op, num2);
 
 
-      Console.WriteLine(SumArray(new int[] { 3, 6, 8, 1, 9, 10, 2 }));
+      // Console.WriteLine(SumArray(new int[] { 3, 6, 8, 1, 9, 10, 2 }));
 
       // Console.WriteLine(SumArray2(new int[] { 1, 3, 5, 7, 40 }));
 
-      Console.WriteLine(SumOddArray(new int[] { 2, 1, 4, 5, 7, 6 }));
+      // Console.WriteLine(SumOddArray(new int[] { 2, 1, 4, 5, 7, 6 }));
 
       // // Console.WriteLine(SumOddArray2());
 
@@ -519,11 +519,11 @@ namespace csharppractice
 
       // Console.WriteLine(SmallestInArray(new int[] { 30, 40, 20, 10, 10, 90 }, Int32.MaxValue));
 
-      // Console.WriteLine(SmallestInArray2(new int[] { 6, 3, 10, -19, 40, 4 }));
+      Console.WriteLine(SmallestInArray2(new int[] { 6, 3, 10, -19, 40, 4 }));
 
-      Console.WriteLine(SumForEach(new int[] { 3, 6, 9, 12 }));
+      // Console.WriteLine(SumForEach(new int[] { 3, 6, 9, 12 }));
 
-      Console.WriteLine(SquareSum(new int[] { 1, 2, 2 }));
+      // Console.WriteLine(SquareSum(new int[] { 1, 2, 2 }));
 
       Console.ReadLine();
 
@@ -533,7 +533,7 @@ namespace csharppractice
     static int LargestInArray1(int[] arr)
     {
       int element = arr[0];
-      for (int i = 1; i < arr.Length; i++)
+      for (int i = 0; i < arr.Length; i++)
       {
         if (element < arr[i])
         {
@@ -643,6 +643,20 @@ namespace csharppractice
         }
       }
       return smallest;
+    }
+    ///////////////////////////////////////////////
+
+    static int SmallestInArray2(int[] arr)
+    {
+      int element = arr[0];
+      for (int i = 1; i < arr.Length; i++)
+      {
+        if (element > arr[i])
+        {
+          element = arr[i];
+        }
+      }
+      return element;
     }
 
 
