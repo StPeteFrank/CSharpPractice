@@ -507,7 +507,7 @@ namespace csharppractice
 
       // Console.WriteLine(SumArray2(new int[] { 1, 3, 5, 7, 40 }));
 
-      Console.WriteLine(SumOddArray(new int[] { 2, 1, 4, 5, 7, 6 }));
+      // Console.WriteLine(SumOddArray(new int[] { 2, 1, 4, 5, 7, 6 }));
 
       // // Console.WriteLine(SumOddArray2());
 
@@ -519,7 +519,7 @@ namespace csharppractice
 
       // Console.WriteLine(SmallestInArray(new int[] { 30, 40, 20, 10, 10, 90 }, Int32.MaxValue));
 
-      // Console.WriteLine(SmallestInArray2(new int[] { 6, 3, 10, -19, 40, 4 }));
+      Console.WriteLine(SmallestInArray2(new int[] { 10, 15, 7, -9, 14, 0, 2, 8 }));
 
       // Console.WriteLine(SumForEach(new int[] { 3, 6, 9, 12 }));
 
@@ -595,19 +595,6 @@ namespace csharppractice
 
     /////////////////// WhiteBoard Question 3/4 SumOddArray
 
-    // static int SumOddArray(int[] arr)
-    // {
-    //   int sum = 0;
-    //   for (int i = 0; i < arr.Length; i++)
-    //   {
-    //     if (arr[i] % 2 == 1)
-    //     {
-    //       sum += arr[i];
-    //     }
-    //   }
-    //   return sum;
-    // }
-
     static int SumOddArray(int[] arr)
     {
       int sum = 0;
@@ -673,10 +660,23 @@ namespace csharppractice
     }
     ///////////////////////////////////////////////
 
+    // static int SmallestInArray2(int[] arr)
+    // {
+    //   int element = arr[0];
+    //   for (int i = 1; i < arr.Length; i++)
+    //   {
+    //     if (element > arr[i])
+    //     {
+    //       element = arr[i];
+    //     }
+    //   }
+    //   return element;
+    // }
+
     static int SmallestInArray2(int[] arr)
     {
       int element = arr[0];
-      for (int i = 1; i < arr.Length; i++)
+      for (int i = 0; i < arr.Length; i++)
       {
         if (element > arr[i])
         {
@@ -685,6 +685,7 @@ namespace csharppractice
       }
       return element;
     }
+
     // static int SmallestInArray2(int[] arr)
     // {
     //   return arr.Min();
