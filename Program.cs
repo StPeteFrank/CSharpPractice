@@ -513,7 +513,7 @@ namespace csharppractice
 
       // Console.WriteLine(LargestInArray(new int[] { 1, 2, 3, 4, 5, 6, 7, -10 }, Int32.MinValue));
 
-      Console.WriteLine(LargestInArray1(new int[] { 8, 1, 2, 3, 4, 5, 6, 7, 12, -10 }));
+      // Console.WriteLine(LargestInArray1(new int[] { 8, 1, 2, 3, 4, 5, 6, 7, 12, -10 }));
 
       // Console.WriteLine(LargestInArray2(new int[] { 2, 6, 99 }));
 
@@ -521,7 +521,7 @@ namespace csharppractice
 
       // Console.WriteLine(SmallestInArray2(new int[] { 6, 3, 10, -19, 40, 4 }));
 
-      // Console.WriteLine(SumForEach(new int[] { 3, 6, 9, 12 }));
+      Console.WriteLine(SumForEach(new int[] { 3, 6, 9, 12 }));
 
       // Console.WriteLine(SquareSum(new int[] { 1, 2, 2 }));
 
@@ -548,7 +548,7 @@ namespace csharppractice
       int element = arr[0];
       for (int i = 0; i < arr.Length; i++)
       {
-        if (element < arr[i])
+        if (element < arr[i])   //It is choosing the the greatest value of ints greater than element that was set at index 0 and then returning th greatest.
         {
           element = arr[i];
         }
@@ -565,12 +565,22 @@ namespace csharppractice
 
     ////////////////////////////////////////****** */
 
+    // static int SumForEach(int[] arr)
+    // {
+    //   int sum = 0;
+    //   foreach (int number in arr)
+    //   {
+    //     sum += number;
+    //   }
+    //   return sum;
+    // }
+
     static int SumForEach(int[] arr)
     {
       int sum = 0;
-      foreach (int number in arr)
+      foreach (int num in arr)
       {
-        sum += number;
+        sum = sum + num;
       }
       return sum;
     }
