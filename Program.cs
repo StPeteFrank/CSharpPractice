@@ -503,7 +503,7 @@ namespace csharppractice
       // Calculator(num1, op, num2);
 
 
-      // Console.WriteLine(SumArray(new int[] { 3, 6, 8, 1, 9, 10, 2 }));
+      Console.WriteLine(SumArray(new int[] { 3, 6, 8, 1, 9, 10, 2 }));
 
       // Console.WriteLine(SumArray2(new int[] { 1, 3, 5, 7, 40 }));
 
@@ -521,7 +521,7 @@ namespace csharppractice
 
       // Console.WriteLine(SmallestInArray2(new int[] { 6, 3, 10, -19, 40, 4 }));
 
-      Console.WriteLine(SumForEach(new int[] { 3, 6, 9, 12 }));
+      // Console.WriteLine(SumForEach(new int[] { 3, 6, 9, 12 }));
 
       // Console.WriteLine(SquareSum(new int[] { 1, 2, 2 }));
 
@@ -565,16 +565,6 @@ namespace csharppractice
 
     ////////////////////////////////////////****** */
 
-    // static int SumForEach(int[] arr)
-    // {
-    //   int sum = 0;
-    //   foreach (int number in arr)
-    //   {
-    //     sum += number;
-    //   }
-    //   return sum;
-    // }
-
     static int SumForEach(int[] arr)
     {
       int sum = 0;
@@ -586,7 +576,17 @@ namespace csharppractice
     }
 
     ////////////////// WhiteBoard Question 3/4 SumArray
-    static int SumArray(int[] arr)    //parameters
+    // static int SumArray(int[] arr)    //parameters
+    // {
+    //   int sum = 0;
+    //   for (int i = 0; i < arr.Length; i++)
+    //   {
+    //     sum += arr[i];
+    //   }
+    //   return sum;
+    // }
+
+    static int SumArray(int[] arr)
     {
       int sum = 0;
       for (int i = 0; i < arr.Length; i++)
