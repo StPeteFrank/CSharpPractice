@@ -503,11 +503,11 @@ namespace csharppractice
       // Calculator(num1, op, num2);
 
 
-      Console.WriteLine(SumArray(new int[] { 3, 6, 8, 1, 9, 10, 2 }));
+      // Console.WriteLine(SumArray(new int[] { 3, 6, 8, 1, 9, 10, 2 }));
 
       // Console.WriteLine(SumArray2(new int[] { 1, 3, 5, 7, 40 }));
 
-      // Console.WriteLine(SumOddArray(new int[] { 2, 1, 4, 5, 7, 6 }));
+      Console.WriteLine(SumOddArray(new int[] { 2, 1, 4, 5, 7, 6 }));
 
       // // Console.WriteLine(SumOddArray2());
 
@@ -576,17 +576,7 @@ namespace csharppractice
     }
 
     ////////////////// WhiteBoard Question 3/4 SumArray
-    // static int SumArray(int[] arr)    //parameters
-    // {
-    //   int sum = 0;
-    //   for (int i = 0; i < arr.Length; i++)
-    //   {
-    //     sum += arr[i];
-    //   }
-    //   return sum;
-    // }
-
-    static int SumArray(int[] arr)
+    static int SumArray(int[] arr)    //parameters
     {
       int sum = 0;
       for (int i = 0; i < arr.Length; i++)
@@ -597,12 +587,26 @@ namespace csharppractice
     }
 
     // or //
+
     // static int SumArray2(int[] arr)
     // {
     //   return arr.Sum();
     // }
 
     /////////////////// WhiteBoard Question 3/4 SumOddArray
+
+    // static int SumOddArray(int[] arr)
+    // {
+    //   int sum = 0;
+    //   for (int i = 0; i < arr.Length; i++)
+    //   {
+    //     if (arr[i] % 2 == 1)
+    //     {
+    //       sum += arr[i];
+    //     }
+    //   }
+    //   return sum;
+    // }
 
     static int SumOddArray(int[] arr)
     {
